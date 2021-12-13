@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/etairi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://erkantairi.com
+  * I am etairi (https://keybase.io/etairi) on keybase.
+  * I have a public key with fingerprint D5C8 EA2E 9967 EAE4 BA6B  E314 B173 0E60 D63A 5403
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f9873eef8d3ebfe91c6dd29e31a6f2f29ffb4f221063463730d4e33b6b25ed320a",
+      "fingerprint": "d5c8ea2e9967eae4ba6be314b1730e60d63a5403",
+      "host": "keybase.io",
+      "key_id": "b1730e60d63a5403",
+      "kid": "0101f9873eef8d3ebfe91c6dd29e31a6f2f29ffb4f221063463730d4e33b6b25ed320a",
+      "uid": "ad049730cd520ddaa5262199e20a6919",
+      "username": "etairi"
+    },
+    "merkle_root": {
+      "ctime": 1639344583,
+      "hash_meta": "8be83ad01ead1b1ae537ecb3027c2e61feb8617d1d6dd26df4a89f57d6c41038",
+      "seqno": 21419464
+    },
+    "revoke": {
+      "sig_ids": [
+        "a2338553be04270f3cd0fb06927417673a7c84e329fd908309cfa37ee8553e500f"
+      ]
+    },
+    "service": {
+      "hostname": "erkantairi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1639344618,
+  "expire_in": 157680000,
+  "prev": "34be3e9dfd4a6cde49154e3f2aed2d67de1691946605dfad524461d92e663672",
+  "seqno": 94,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK5AnicrVNdaB1FGL1prDEpYqt9ECqIGysW0jJ/O7tzMQ+2tAR90QT8IW2vszvf
+JNt77+7N7iZtTFIRVKzWKNIIoqUoemsrpD9EaRFMDEVbSvsiaKsXm2gb21KlVEuE
+CnH2YhHBR+dlmdlzzne+880cu70x19Lw+/bq6Y8efvxsw8nprf05+WlwecjyIjVo
+5YesItQ/UFKQpIVioKy8hTDCWrgOBdCuouBpENjnShEBFEuuiSZCa49pQjDilHHq
+UKQYUOpxj9igKEHSarN0EPZAXImDMDWyyvZdkASE4A5IYJ7kntFjHjZs4EhxKm2G
+qCH2RknGMOY8mcCaIDJnZlOo2/sP/P/su78uJxViwgB8ZROklJQ24QQLAQbEBRYZ
+MIE4lGUwaEhlEAfWSJtVhrhYgkIcRWkWrZ8GGQBzKihjtktNezLpLZQNw/BcD1xq
+SmGQCntYgk0d8D2KiOMT4FiD53LsKKyyRrjSTLpC247iPsOIusZFAn1hZOUJZlgw
+zoyFGAaiImTVk6DHpJZY+W5LEkpd26YeIEYcpKmvkPYQF8Rh2OEOlY7vmjBMRkog
+lyLha2nMQEYCGyFtbRrJqsUDgV8Xz8Z0s/24KMN6BGv8qGxMVeIojfyoZP71pmkl
+yWfRpIOVDLwVvMLfMgUvCJW5JoYxAHESRKGJyiD/nRrHbpsF2ypBDIUgQ9gOd5FZ
+WR0YMJKUmbsEQmnFJPcVMIFt04smEhRR3FGAs5kxzpGttDQjzVSVMBFzyh3yT4yC
+GZ+yx2ia7EKZ9sdgjUxPbbwl19CSu3Xxouz95Fqal958VZ892LTwyNfnrHd+m/lg
++a75yUcfOvn9bDh4rXpw7Rs/dLXWPnzh23tXv3y4v/WuubN9c1eql+8eL7cvHH/r
+/Oejs7mlE521o2PPdR2YuCTu2HPllBqbrZ5pfg8uvLZsx8zuA8cn9kdL7It/Hpre
+2dS9fvLavhcvqPu3b35/OBo+n9v37OjVZ9rHZtLr6185PbXl6Cddez++1Dp1z8ib
+d7676OfVzeuONN63pLR82fXqZrrh15p05jf0nbF+fPr5jp+8E/NHJte+3fvNV69O
+BbVj9Mux/Iqh0n4x98CT4ytWum2/bHvqD7FzYWU43HFb99XHtnTewF+Mdu2ordo1
+/tLF9tzuxu82rmq6sbgT7Tm3TjzxesdfVViL/g==
+=MBIa
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/etairi
+
+==================================================================

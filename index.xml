@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erkan Tairi</title>
+    <link>https://erkantairi.com/</link>
+      <atom:link href="https://erkantairi.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Erkan Tairi</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Erkan Tairi</copyright><lastBuildDate>Wed, 27 Oct 2021 09:25:38 +0000</lastBuildDate>
+    <image>
+      <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
+      <title>Erkan Tairi</title>
+      <link>https://erkantairi.com/</link>
+    </image>
+    
+    <item>
+      <title>Post-Quantum Adaptor Signature for Privacy-Preserving Off-Chain Payments</title>
+      <link>https://erkantairi.com/publication/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/</link>
+      <pubDate>Wed, 27 Oct 2021 09:25:38 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A2L: Anonymous Atomic Locks for Scalability in Payment Channel Hubs</title>
+      <link>https://erkantairi.com/publication/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/</link>
+      <pubDate>Tue, 12 Oct 2021 18:03:28 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Updatable Signatures and Message Authentication Codes</title>
+      <link>https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/</link>
+      <pubDate>Sun, 25 Jul 2021 11:48:25 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A2L: Anonymous Atomic Locks for Scalability in Payment Channel Hubs</title>
+      <link>https://erkantairi.com/talk/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/talk/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Updatable Signatures and Message Authentication Codes</title>
+      <link>https://erkantairi.com/talk/updatable-signatures-and-message-authentication-codes/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/talk/updatable-signatures-and-message-authentication-codes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post-Quantum Adaptor Signature for Privacy-Preserving Off-Chain Payments</title>
+      <link>https://erkantairi.com/talk/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/talk/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://erkantairi.com/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://erkantairi.com/sitemap.xml
