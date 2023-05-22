@@ -60,12 +60,11 @@
   
     
   
-  <meta name="description" content="Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&#39; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry.
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system.
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L&#43;, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought." />
+  <meta name="description" content="Functional encryption (FE) is a primitive where the holder of a master secret key can control which functions a user can evaluate on encrypted data. It is a powerful primitive that even implies indistinguishability obfuscation (iO), given sufficiently compact ciphertexts (Ananth-Jain, CRYPTO&#39;15 and Bitansky-Vaikuntanathan, FOCS&#39;15). However, despite being extensively studied, there are FE schemes, such as function-hiding inner-product FE (Bishop-Jain-Kowalczyk, AC&#39;15, Abdalla-Catalano-Fiore-Gay-Ursu, CRYPTO’18) and compact quadratic FE (Baltico-Catalano-Fiore-Gay, Lin, CRYPTO’17), that can be only realized using pairings. This raises whether there are some mathematical barriers which hinder us from realizing these FE schemes from other assumptions.
+In this paper, we study the difficulty of constructing lattice-based compact FE. We generalize the impossibility results of Ünal (EC&#39;20) for lattice-based function-hiding FE, and extend it to the case of compact FE. Concretely, we prove lower bounds for lattice-based compact FE schemes which meet some (natural) algebraic restrictions at encryption and decryption, and have messages and ciphertexts of constant dimensions. We see our results as important indications of why it is hard to construct lattice-based FE schemes for new functionalities, and which mathematical barriers have to be overcome." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
+  <link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/" />
 
   
   
@@ -320,7 +319,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   <link rel="icon" type="image/png" href="/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
+  <link rel="canonical" href="https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/" />
 
   
   
@@ -346,20 +345,19 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     <meta property="twitter:creator" content="@https://twitter.com/erkantairi" />
   
   <meta property="og:site_name" content="Erkan Tairi" />
-  <meta property="og:url" content="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
-  <meta property="og:title" content="Foundations of Coin Mixing Services | Erkan Tairi" />
-  <meta property="og:description" content="Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&#39; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry.
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system.
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L&#43;, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/" />
+  <meta property="og:title" content="Lower Bounds for Lattice-based Compact Functional Encryption | Erkan Tairi" />
+  <meta property="og:description" content="Functional encryption (FE) is a primitive where the holder of a master secret key can control which functions a user can evaluate on encrypted data. It is a powerful primitive that even implies indistinguishability obfuscation (iO), given sufficiently compact ciphertexts (Ananth-Jain, CRYPTO&#39;15 and Bitansky-Vaikuntanathan, FOCS&#39;15). However, despite being extensively studied, there are FE schemes, such as function-hiding inner-product FE (Bishop-Jain-Kowalczyk, AC&#39;15, Abdalla-Catalano-Fiore-Gay-Ursu, CRYPTO’18) and compact quadratic FE (Baltico-Catalano-Fiore-Gay, Lin, CRYPTO’17), that can be only realized using pairings. This raises whether there are some mathematical barriers which hinder us from realizing these FE schemes from other assumptions.
+In this paper, we study the difficulty of constructing lattice-based compact FE. We generalize the impossibility results of Ünal (EC&#39;20) for lattice-based function-hiding FE, and extend it to the case of compact FE. Concretely, we prove lower bounds for lattice-based compact FE schemes which meet some (natural) algebraic restrictions at encryption and decryption, and have messages and ciphertexts of constant dimensions. We see our results as important indications of why it is hard to construct lattice-based FE schemes for new functionalities, and which mathematical barriers have to be overcome." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-07-21T18:03:28&#43;00:00"
+        content="2023-05-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-07-21T18:03:28&#43;00:00">
+    <meta property="article:modified_time" content="2023-05-22T15:00:00&#43;00:00">
   
 
   
@@ -381,16 +379,16 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://erkantairi.com/publication/foundations-of-coin-mixing-services/"
+    "@id": "https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/"
   },
-  "headline": "Foundations of Coin Mixing Services",
+  "headline": "Lower Bounds for Lattice-based Compact Functional Encryption",
   
-  "datePublished": "2022-07-21T18:03:28Z",
-  "dateModified": "2022-07-21T18:03:28Z",
+  "datePublished": "2023-05-22T00:00:00Z",
+  "dateModified": "2023-05-22T15:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Noemi Glaeser"
+    "name": "Erkan Tairi"
   },
   
   "publisher": {
@@ -401,7 +399,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       "url": "https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users' coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry.\nA recent work of Tairi et al. [IEEE S\u0026P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system.\nTo amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L+, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought."
+  "description": "Functional encryption (FE) is a primitive where the holder of a master secret key can control which functions a user can evaluate on encrypted data. It is a powerful primitive that even implies indistinguishability obfuscation (iO), given sufficiently compact ciphertexts (Ananth-Jain, CRYPTO'15 and Bitansky-Vaikuntanathan, FOCS'15). However, despite being extensively studied, there are FE schemes, such as function-hiding inner-product FE (Bishop-Jain-Kowalczyk, AC'15, Abdalla-Catalano-Fiore-Gay-Ursu, CRYPTO’18) and compact quadratic FE (Baltico-Catalano-Fiore-Gay, Lin, CRYPTO’17), that can be only realized using pairings. This raises whether there are some mathematical barriers which hinder us from realizing these FE schemes from other assumptions.\nIn this paper, we study the difficulty of constructing lattice-based compact FE. We generalize the impossibility results of Ünal (EC'20) for lattice-based function-hiding FE, and extend it to the case of compact FE. Concretely, we prove lower bounds for lattice-based compact FE schemes which meet some (natural) algebraic restrictions at encryption and decryption, and have messages and ciphertexts of constant dimensions. We see our results as important indications of why it is hard to construct lattice-based FE schemes for new functionalities, and which mathematical barriers have to be overcome."
 }
 </script>
 
@@ -417,11 +415,11 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
 
-  <title>Foundations of Coin Mixing Services | Erkan Tairi</title>
+  <title>Lower Bounds for Lattice-based Compact Functional Encryption | Erkan Tairi</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="63a9769e4d71a7a64c6295b6f90673c8" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c3bd1225d50286509a731fe12a84424a" >
 
   
   
@@ -729,7 +727,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   
   
 <div class="article-container pt-3">
-  <h1>Foundations of Coin Mixing Services</h1>
+  <h1>Lower Bounds for Lattice-based Compact Functional Encryption</h1>
 
   
 
@@ -746,13 +744,9 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   <div>
     
 
-  <span >
-      Noemi Glaeser</span>, <span >
-      Matteo Maffei</span>, <span >
-      Giulio Malavolta</span>, <span >
-      Pedro Moreno-Sanchez</span>, <span class="author-highlighted">
+  <span class="author-highlighted">
       Erkan Tairi</span>, <span >
-      Sri AravindaKrishnan Thyagarajan</span>
+      Akın Ünal</span>
   </div>
   
   
@@ -763,7 +757,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     
       
     
-    July 2022
+    May 2023
   </span>
   
 
@@ -806,7 +800,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/foundations-of-coin-mixing-services/cite.bib">
+        data-filename="/publication/lower-bounds-for-lattice-based-compact-functional-encryption/cite.bib">
   Cite
 </a>
 
@@ -822,10 +816,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1145/3548606.3560637" target="_blank" rel="noopener">
-  DOI
-</a>
-
 
   
   
@@ -838,7 +828,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2022/942" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2023/719" target="_blank" rel="noopener">
     Full Version</a>
 
 
@@ -854,9 +844,8 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&rsquo; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry.
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system.
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L+, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought.</p>
+    <p class="pub-abstract">Functional encryption (FE) is a primitive where the holder of a master secret key can control which functions a user can evaluate on encrypted data. It is a powerful primitive that even implies indistinguishability obfuscation (iO), given sufficiently compact ciphertexts (Ananth-Jain, CRYPTO'15 and Bitansky-Vaikuntanathan, FOCS'15). However, despite being extensively studied, there are FE schemes, such as function-hiding inner-product FE (Bishop-Jain-Kowalczyk, AC'15, Abdalla-Catalano-Fiore-Gay-Ursu, CRYPTO’18) and compact quadratic FE (Baltico-Catalano-Fiore-Gay, Lin, CRYPTO’17), that can be only realized using pairings. This raises whether there are some mathematical barriers which hinder us from realizing these FE schemes from other assumptions.
+In this paper, we study the difficulty of constructing lattice-based compact FE. We generalize the impossibility results of Ünal (EC'20) for lattice-based function-hiding FE, and extend it to the case of compact FE. Concretely, we prove lower bounds for lattice-based compact FE schemes which meet some (natural) algebraic restrictions at encryption and decryption, and have messages and ciphertexts of constant dimensions. We see our results as important indications of why it is hard to construct lattice-based FE schemes for new functionalities, and which mathematical barriers have to be overcome.</p>
     
 
     
@@ -867,8 +856,8 @@ To amend this situation, we investigate secure constructions of coin mixing serv
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#3">
+              Preprint
             </a>
           </div>
         </div>
@@ -878,18 +867,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     <div class="d-md-none space-below"></div>
     
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">29th ACM Conference on Computer and Communications Security</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
     
 
     <div class="space-below"></div>
@@ -916,30 +893,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
   
-  
-    
-
-
-
-
-  
-    
-
-
-
-
-  
-    
-
-
-
-
-  
-    
-
-
-
-
   
     
 
