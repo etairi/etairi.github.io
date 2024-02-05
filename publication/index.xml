@@ -5,7 +5,7 @@
     <link>https://erkantairi.com/publication/</link>
       <atom:link href="https://erkantairi.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Erkan Tairi</copyright><lastBuildDate>Sun, 03 Sep 2023 10:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Erkan Tairi</copyright><lastBuildDate>Mon, 05 Feb 2024 15:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,17 +13,9 @@
     </image>
     
     <item>
-      <title>LedgerLocks: A Security Framework for Blockchain Protocols Based on Adaptor Signatures</title>
-      <link>https://erkantairi.com/publication/ledgerlocks-a-security-framework-for-blockchain-protocols-based-on-adaptor-signatures/</link>
-      <pubDate>Sun, 03 Sep 2023 10:30:00 +0000</pubDate>
-      <guid>https://erkantairi.com/publication/ledgerlocks-a-security-framework-for-blockchain-protocols-based-on-adaptor-signatures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Lower Bounds for Lattice-based Compact Functional Encryption</title>
       <link>https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/</link>
-      <pubDate>Mon, 22 May 2023 15:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Feb 2024 15:00:00 +0000</pubDate>
       <guid>https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/</guid>
       <description></description>
     </item>
@@ -31,8 +23,16 @@
     <item>
       <title>(Inner-Product) Functional Encryption with Updatable Ciphertexts</title>
       <link>https://erkantairi.com/publication/inner-product-functional-encryption-with-updatable-ciphertexts/</link>
-      <pubDate>Wed, 28 Sep 2022 19:41:28 +0000</pubDate>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://erkantairi.com/publication/inner-product-functional-encryption-with-updatable-ciphertexts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LedgerLocks: A Security Framework for Blockchain Protocols Based on Adaptor Signatures</title>
+      <link>https://erkantairi.com/publication/ledgerlocks-a-security-framework-for-blockchain-protocols-based-on-adaptor-signatures/</link>
+      <pubDate>Tue, 21 Nov 2023 10:30:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/ledgerlocks-a-security-framework-for-blockchain-protocols-based-on-adaptor-signatures/</guid>
       <description></description>
     </item>
     
