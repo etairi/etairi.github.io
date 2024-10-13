@@ -5,12 +5,20 @@
     <link>https://erkantairi.com/publication/</link>
       <atom:link href="https://erkantairi.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Feb 2024 15:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://erkantairi.com/publication/</link>
     </image>
+    
+    <item>
+      <title>LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems</title>
+      <link>https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Lower Bounds for Lattice-based Compact Functional Encryption</title>

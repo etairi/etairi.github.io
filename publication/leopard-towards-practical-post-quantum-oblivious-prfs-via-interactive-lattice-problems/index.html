@@ -279,13 +279,13 @@
 
   
 
-<meta name="description" content="Cryptographic objects with updating capabilities have been proposed by Bellare, Goldreich and Goldwasser (CRYPTO&#39;94) under the umbrella of incremental cryptography. They have recently seen increased interest, motivated by theoretical questions (Ananth et al., EC&#39;17) as well as concrete practical motivations (Lehmann et al., EC&#39;18; Groth et al. CRYPTO&#39;18; Klooss et al., EC&#39;19). In this work, the form of updatability we are particularly interested in is that primitives are key-updatable and allow to update old cryptographic objects, e.g., signatures or message authentication codes, from the old key to the updated key at the same time without requiring full access to the new key (i.e., only via a so-called update token).
-Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (EC&#39;18) and Boyd et al. (CRYPTO&#39;20), we introduce a definitional framework for updatable signatures (USs) and message authentication codes (UMACs). We discuss several applications demonstrating that such primitives can be useful in practical applications, especially around key rotation in various domains, as well as serve as building blocks in other cryptographic schemes. We then turn to constructions and our focus there is on ones that are secure and practically efficient. In particular, we provide generic constructions from key-homomorphic primitives (signatures and PRFs) as well as direct constructions. This allows us to instantiate these primitives from various assumptions such as DDH or CDH (latter in bilinear groups), or the (R)LWE and the SIS assumptions. As an example, we obtain highly practical US schemes from BLS signatures or UMAC schemes from the Naor-Pinkas-Reingold PRF." />
+<meta name="description" content="In this work, we introduce a more efficient post-quantum oblivious PRF (OPRF) design, called LeOPaRd. Our proposal is round-optimal and supports verifiability and partial obliviousness, all of which are important for practical applications. The main technical novelty of our work is a new method for computing samples of MLWE (module learning with errors) in a two-party setting. To do this, we introduce a new family of interactive lattice problems, called interactive MLWE and rounding with re-use (iMLWER-RU). We rigorously study the hardness of iMLWER-RU and reduce it (under some natural idealized setting) to a more standard MLWE-like problem where the adversary is additionally given access to a randomized MLWE PRF oracle. We believe iMLWER-RU can be of independent interest for other interactive protocols.
+LeOPaRd exploits this new iMLWER-RU assumption to realize a lattice-based OPRF design without relying on heavy machinery such as noise flooding and fully homomorphic encryption used in earlier works. LeOPaRd can feature around 136 KB total communication, compared to 300&#43; KB in earlier works. We also identify gaps in some existing constructions and models, and propose appropriate fixes." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/" />
-<link rel="canonical" href="https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/" />
+<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/" />
+<link rel="canonical" href="https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/" />
 
 
 
@@ -324,19 +324,19 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Erkan Tairi" />
-<meta property="og:url" content="https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/" />
-<meta property="og:title" content="Updatable Signatures and Message Authentication Codes | Erkan Tairi" />
-<meta property="og:description" content="Cryptographic objects with updating capabilities have been proposed by Bellare, Goldreich and Goldwasser (CRYPTO&#39;94) under the umbrella of incremental cryptography. They have recently seen increased interest, motivated by theoretical questions (Ananth et al., EC&#39;17) as well as concrete practical motivations (Lehmann et al., EC&#39;18; Groth et al. CRYPTO&#39;18; Klooss et al., EC&#39;19). In this work, the form of updatability we are particularly interested in is that primitives are key-updatable and allow to update old cryptographic objects, e.g., signatures or message authentication codes, from the old key to the updated key at the same time without requiring full access to the new key (i.e., only via a so-called update token).
-Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (EC&#39;18) and Boyd et al. (CRYPTO&#39;20), we introduce a definitional framework for updatable signatures (USs) and message authentication codes (UMACs). We discuss several applications demonstrating that such primitives can be useful in practical applications, especially around key rotation in various domains, as well as serve as building blocks in other cryptographic schemes. We then turn to constructions and our focus there is on ones that are secure and practically efficient. In particular, we provide generic constructions from key-homomorphic primitives (signatures and PRFs) as well as direct constructions. This allows us to instantiate these primitives from various assumptions such as DDH or CDH (latter in bilinear groups), or the (R)LWE and the SIS assumptions. As an example, we obtain highly practical US schemes from BLS signatures or UMAC schemes from the Naor-Pinkas-Reingold PRF." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/" />
+<meta property="og:title" content="LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems | Erkan Tairi" />
+<meta property="og:description" content="In this work, we introduce a more efficient post-quantum oblivious PRF (OPRF) design, called LeOPaRd. Our proposal is round-optimal and supports verifiability and partial obliviousness, all of which are important for practical applications. The main technical novelty of our work is a new method for computing samples of MLWE (module learning with errors) in a two-party setting. To do this, we introduce a new family of interactive lattice problems, called interactive MLWE and rounding with re-use (iMLWER-RU). We rigorously study the hardness of iMLWER-RU and reduce it (under some natural idealized setting) to a more standard MLWE-like problem where the adversary is additionally given access to a randomized MLWE PRF oracle. We believe iMLWER-RU can be of independent interest for other interactive protocols.
+LeOPaRd exploits this new iMLWER-RU assumption to realize a lattice-based OPRF design without relying on heavy machinery such as noise flooding and fully homomorphic encryption used in earlier works. LeOPaRd can feature around 136 KB total communication, compared to 300&#43; KB in earlier works. We also identify gaps in some existing constructions and models, and propose appropriate fixes." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2021-12-12T00:00:00&#43;00:00"
+      content="2024-10-10T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2021-07-25T11:48:25&#43;00:00">
+    <meta property="article:modified_time" content="2024-10-10T00:00:00&#43;00:00">
   
 
 
@@ -360,16 +360,16 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://erkantairi.com/publication/updatable-signatures-and-message-authentication-codes/"
+    "@id": "https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/"
   },
-  "headline": "Updatable Signatures and Message Authentication Codes",
+  "headline": "LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems",
   
-  "datePublished": "2021-12-12T00:00:00Z",
-  "dateModified": "2021-07-25T11:48:25Z",
+  "datePublished": "2024-10-10T00:00:00Z",
+  "dateModified": "2024-10-10T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Valerio Cini"
+    "name": "Muhammed F. Esgin"
   },
   
   "publisher": {
@@ -380,7 +380,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       "url": "https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Cryptographic objects with updating capabilities have been proposed by Bellare, Goldreich and Goldwasser (CRYPTO'94) under the umbrella of incremental cryptography. They have recently seen increased interest, motivated by theoretical questions (Ananth et al., EC'17) as well as concrete practical motivations (Lehmann et al., EC'18; Groth et al. CRYPTO'18; Klooss et al., EC'19). In this work, the form of updatability we are particularly interested in is that primitives are key-updatable and allow to update old cryptographic objects, e.g., signatures or message authentication codes, from the old key to the updated key at the same time without requiring full access to the new key (i.e., only via a so-called update token).\nInspired by the rigorous study of updatable encryption by Lehmann and Tackmann (EC'18) and Boyd et al. (CRYPTO'20), we introduce a definitional framework for updatable signatures (USs) and message authentication codes (UMACs). We discuss several applications demonstrating that such primitives can be useful in practical applications, especially around key rotation in various domains, as well as serve as building blocks in other cryptographic schemes. We then turn to constructions and our focus there is on ones that are secure and practically efficient. In particular, we provide generic constructions from key-homomorphic primitives (signatures and PRFs) as well as direct constructions. This allows us to instantiate these primitives from various assumptions such as DDH or CDH (latter in bilinear groups), or the (R)LWE and the SIS assumptions. As an example, we obtain highly practical US schemes from BLS signatures or UMAC schemes from the Naor-Pinkas-Reingold PRF."
+  "description": "In this work, we introduce a more efficient post-quantum oblivious PRF (OPRF) design, called LeOPaRd. Our proposal is round-optimal and supports verifiability and partial obliviousness, all of which are important for practical applications. The main technical novelty of our work is a new method for computing samples of MLWE (module learning with errors) in a two-party setting. To do this, we introduce a new family of interactive lattice problems, called interactive MLWE and rounding with re-use (iMLWER-RU). We rigorously study the hardness of iMLWER-RU and reduce it (under some natural idealized setting) to a more standard MLWE-like problem where the adversary is additionally given access to a randomized MLWE PRF oracle. We believe iMLWER-RU can be of independent interest for other interactive protocols.\nLeOPaRd exploits this new iMLWER-RU assumption to realize a lattice-based OPRF design without relying on heavy machinery such as noise flooding and fully homomorphic encryption used in earlier works. LeOPaRd can feature around 136 KB total communication, compared to 300+ KB in earlier works. We also identify gaps in some existing constructions and models, and propose appropriate fixes."
 }
 </script>
 
@@ -402,7 +402,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
 
   
-  <title>Updatable Signatures and Message Authentication Codes | Erkan Tairi</title>
+  <title>LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems | Erkan Tairi</title>
 
   
   
@@ -422,7 +422,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="7bccaeb16abad8bc1b86b71ce4f03445" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="90ac8ec3239ed14e2a098c3e1d9f55f5" >
 
   
   
@@ -743,7 +743,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
   
   
 <div class="article-container pt-3">
-  <h1>Updatable Signatures and Message Authentication Codes</h1>
+  <h1>LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems</h1>
 
   
 
@@ -761,11 +761,10 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
     
 
   <span >
-      Valerio Cini</span>, <span >
-      Sebastian Ramacher</span>, <span >
-      Daniel Slamanig</span>, <span >
-      Christoph Striecks</span>, <span class="author-highlighted">
-      Erkan Tairi</span>
+      Muhammed F. Esgin</span>, <span >
+      Ron Steinfeld</span>, <span class="author-highlighted">
+      Erkan Tairi</span>, <span >
+      Jie Xu</span>
   </div>
   
   
@@ -776,7 +775,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
     
       
     
-    July, 2021
+    October, 2024
   </span>
   
 
@@ -817,7 +816,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/updatable-signatures-and-message-authentication-codes/cite.bib">
+        data-filename="/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/cite.bib">
   Cite
 </a>
 
@@ -833,10 +832,6 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1007/978-3-030-75245-3_25" target="_blank" rel="noopener">
-  DOI
-</a>
-
 
   
   
@@ -849,7 +844,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2021/365" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2024/1615" target="_blank" rel="noopener">
     Full Version</a>
 
 
@@ -865,8 +860,8 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Cryptographic objects with updating capabilities have been proposed by Bellare, Goldreich and Goldwasser (CRYPTO'94) under the umbrella of incremental cryptography. They have recently seen increased interest, motivated by theoretical questions (Ananth et al., EC'17) as well as concrete practical motivations (Lehmann et al., EC'18; Groth et al. CRYPTO'18; Klooss et al., EC'19). In this work, the form of updatability we are particularly interested in is that primitives are key-updatable and allow to update old cryptographic objects, e.g., signatures or message authentication codes, from the old key to the updated key at the same time without requiring full access to the new key (i.e., only via a so-called update token).
-Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (EC'18) and Boyd et al. (CRYPTO'20), we introduce a definitional framework for updatable signatures (USs) and message authentication codes (UMACs). We discuss several applications demonstrating that such primitives can be useful in practical applications, especially around key rotation in various domains, as well as serve as building blocks in other cryptographic schemes. We then turn to constructions and our focus there is on ones that are secure and practically efficient. In particular, we provide generic constructions from key-homomorphic primitives (signatures and PRFs) as well as direct constructions. This allows us to instantiate these primitives from various assumptions such as DDH or CDH (latter in bilinear groups), or the (R)LWE and the SIS assumptions. As an example, we obtain highly practical US schemes from BLS signatures or UMAC schemes from the Naor-Pinkas-Reingold PRF.</p>
+    <p class="pub-abstract">In this work, we introduce a more efficient post-quantum oblivious PRF (OPRF) design, called LeOPaRd. Our proposal is round-optimal and supports verifiability and partial obliviousness, all of which are important for practical applications. The main technical novelty of our work is a new method for computing samples of MLWE (module learning with errors) in a two-party setting. To do this, we introduce a new family of interactive lattice problems, called interactive MLWE and rounding with re-use (iMLWER-RU). We rigorously study the hardness of iMLWER-RU and reduce it (under some natural idealized setting) to a more standard MLWE-like problem where the adversary is additionally given access to a randomized MLWE PRF oracle. We believe iMLWER-RU can be of independent interest for other interactive protocols.
+LeOPaRd exploits this new iMLWER-RU assumption to realize a lattice-based OPRF design without relying on heavy machinery such as noise flooding and fully homomorphic encryption used in earlier works. LeOPaRd can feature around 136 KB total communication, compared to 300+ KB in earlier works. We also identify gaps in some existing constructions and models, and propose appropriate fixes.</p>
     
 
     
@@ -877,8 +872,8 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              1
+            <a href="/publication/#3">
+              3
             </a>
           </div>
         </div>
@@ -888,18 +883,6 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
     <div class="d-md-none space-below"></div>
     
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">24th International Conference on Practice and Theory of Public-Key Cryptography (PKC 2021)</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
     
 
     <div class="space-below"></div>
@@ -929,7 +912,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F&amp;text=Updatable&#43;Signatures&#43;and&#43;Message&#43;Authentication&#43;Codes" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F&amp;text=LeOPaRd%3A&#43;Towards&#43;Practical&#43;Post-Quantum&#43;Oblivious&#43;PRFs&#43;via&#43;Interactive&#43;Lattice&#43;Problems" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -946,7 +929,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F&amp;t=Updatable&#43;Signatures&#43;and&#43;Message&#43;Authentication&#43;Codes" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F&amp;t=LeOPaRd%3A&#43;Towards&#43;Practical&#43;Post-Quantum&#43;Oblivious&#43;PRFs&#43;via&#43;Interactive&#43;Lattice&#43;Problems" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -965,7 +948,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
         
       
       <li>
-        <a href="mailto:?subject=Updatable%20Signatures%20and%20Message%20Authentication%20Codes&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=LeOPaRd%3A%20Towards%20Practical%20Post-Quantum%20Oblivious%20PRFs%20via%20Interactive%20Lattice%20Problems&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -982,7 +965,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F&amp;title=Updatable&#43;Signatures&#43;and&#43;Message&#43;Authentication&#43;Codes" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F&amp;title=LeOPaRd%3A&#43;Towards&#43;Practical&#43;Post-Quantum&#43;Oblivious&#43;PRFs&#43;via&#43;Interactive&#43;Lattice&#43;Problems" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -999,7 +982,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       
       
       <li>
-        <a href="whatsapp://send?text=Updatable&#43;Signatures&#43;and&#43;Message&#43;Authentication&#43;Codes%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=LeOPaRd%3A&#43;Towards&#43;Practical&#43;Post-Quantum&#43;Oblivious&#43;PRFs&#43;via&#43;Interactive&#43;Lattice&#43;Problems%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1016,7 +999,7 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fupdatable-signatures-and-message-authentication-codes%2F&amp;title=Updatable&#43;Signatures&#43;and&#43;Message&#43;Authentication&#43;Codes" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fleopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems%2F&amp;title=LeOPaRd%3A&#43;Towards&#43;Practical&#43;Post-Quantum&#43;Oblivious&#43;PRFs&#43;via&#43;Interactive&#43;Lattice&#43;Problems" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1035,18 +1018,6 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
 
   
-  
-    
-
-
-
-
-  
-    
-
-
-
-
   
     
 
@@ -1215,6 +1186,12 @@ Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (
 
     </div>
   </div>
+
+
+  
+    
+
+
 
 
   
