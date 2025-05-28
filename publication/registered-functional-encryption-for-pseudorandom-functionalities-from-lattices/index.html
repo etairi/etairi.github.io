@@ -279,14 +279,15 @@
 
   
 
-<meta name="description" content="Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&#39; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry. &lt;br /&gt;&lt;br /&gt;
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system. &lt;br /&gt;&lt;br /&gt;
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L&#43;, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought." />
+<meta name="description" content="Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme. &lt;br /&gt;&lt;br /&gt;
+Currently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE. &lt;br /&gt;&lt;br /&gt;
+We illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies. &lt;br /&gt;&lt;br /&gt;
+Along the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
-<link rel="canonical" href="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
+<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/" />
+<link rel="canonical" href="https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/" />
 
 
 
@@ -325,20 +326,21 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Erkan Tairi" />
-<meta property="og:url" content="https://erkantairi.com/publication/foundations-of-coin-mixing-services/" />
-<meta property="og:title" content="Foundations of Coin Mixing Services | Erkan Tairi" />
-<meta property="og:description" content="Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&#39; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry. &lt;br /&gt;&lt;br /&gt;
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system. &lt;br /&gt;&lt;br /&gt;
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L&#43;, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/" />
+<meta property="og:title" content="Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More | Erkan Tairi" />
+<meta property="og:description" content="Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme. &lt;br /&gt;&lt;br /&gt;
+Currently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE. &lt;br /&gt;&lt;br /&gt;
+We illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies. &lt;br /&gt;&lt;br /&gt;
+Along the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2022-07-21T18:03:28&#43;00:00"
+      content="2024-05-28T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2022-07-21T18:03:28&#43;00:00">
+    <meta property="article:modified_time" content="2025-05-28T00:00:00&#43;00:00">
   
 
 
@@ -362,16 +364,16 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://erkantairi.com/publication/foundations-of-coin-mixing-services/"
+    "@id": "https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/"
   },
-  "headline": "Foundations of Coin Mixing Services",
+  "headline": "Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More",
   
-  "datePublished": "2022-07-21T18:03:28Z",
-  "dateModified": "2022-07-21T18:03:28Z",
+  "datePublished": "2024-05-28T00:00:00Z",
+  "dateModified": "2025-05-28T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Noemi Glaeser"
+    "name": "Tapas Pal"
   },
   
   "publisher": {
@@ -382,7 +384,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       "url": "https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users' coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry. \u003cbr /\u003e\u003cbr /\u003e\nA recent work of Tairi et al. [IEEE S\u0026P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system. \u003cbr /\u003e\u003cbr /\u003e\nTo amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L+, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought."
+  "description": "Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme. \u003cbr /\u003e\u003cbr /\u003e\nCurrently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE. \u003cbr /\u003e\u003cbr /\u003e\nWe illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies. \u003cbr /\u003e\u003cbr /\u003e\nAlong the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines."
 }
 </script>
 
@@ -404,7 +406,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
   
-  <title>Foundations of Coin Mixing Services | Erkan Tairi</title>
+  <title>Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More | Erkan Tairi</title>
 
   
   
@@ -424,7 +426,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="63a9769e4d71a7a64c6295b6f90673c8" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bcea8a27ff4985bde0fb5ac23c7f2eb1" >
 
   
   
@@ -745,7 +747,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   
   
 <div class="article-container pt-3">
-  <h1>Foundations of Coin Mixing Services</h1>
+  <h1>Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More</h1>
 
   
 
@@ -763,12 +765,9 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     
 
   <span >
-      Noemi Glaeser</span>, <span >
-      Matteo Maffei</span>, <span >
-      Giulio Malavolta</span>, <span >
-      Pedro Moreno-Sanchez</span>, <span class="author-highlighted">
-      Erkan Tairi</span>, <span >
-      Sri AravindaKrishnan Thyagarajan</span>
+      Tapas Pal</span>, <span >
+      Robert Schädlich</span>, <span class="author-highlighted">
+      Erkan Tairi</span>
   </div>
   
   
@@ -779,7 +778,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     
       
     
-    July, 2022
+    May, 2025
   </span>
   
 
@@ -820,7 +819,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/foundations-of-coin-mixing-services/cite.bib">
+        data-filename="/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/cite.bib">
   Cite
 </a>
 
@@ -836,10 +835,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1145/3548606.3560637" target="_blank" rel="noopener">
-  DOI
-</a>
-
 
   
   
@@ -852,7 +847,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2022/942" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2025/967" target="_blank" rel="noopener">
     Full Version</a>
 
 
@@ -868,9 +863,10 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users&rsquo; coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry. <br /><br />
-A recent work of Tairi et al. [IEEE S&amp;P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system. <br /><br />
-To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L+, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought.</p>
+    <p class="pub-abstract">Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme. <br /><br />
+Currently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE. <br /><br />
+We illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies. <br /><br />
+Along the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines.</p>
     
 
     
@@ -881,8 +877,8 @@ To amend this situation, we investigate secure constructions of coin mixing serv
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              1
+            <a href="/publication/#3">
+              3
             </a>
           </div>
         </div>
@@ -892,18 +888,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
     <div class="d-md-none space-below"></div>
     
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">29th ACM Conference on Computer and Communications Security</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
     
 
     <div class="space-below"></div>
@@ -933,7 +917,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F&amp;text=Foundations&#43;of&#43;Coin&#43;Mixing&#43;Services" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F&amp;text=Registered&#43;Functional&#43;Encryption&#43;for&#43;Pseudorandom&#43;Functionalities&#43;from&#43;Lattices%3A&#43;Registered&#43;ABE&#43;for&#43;Unbounded&#43;Depth&#43;Circuits&#43;and&#43;Turing&#43;Machines%2C&#43;and&#43;More" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -950,7 +934,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F&amp;t=Foundations&#43;of&#43;Coin&#43;Mixing&#43;Services" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F&amp;t=Registered&#43;Functional&#43;Encryption&#43;for&#43;Pseudorandom&#43;Functionalities&#43;from&#43;Lattices%3A&#43;Registered&#43;ABE&#43;for&#43;Unbounded&#43;Depth&#43;Circuits&#43;and&#43;Turing&#43;Machines%2C&#43;and&#43;More" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -969,7 +953,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
         
       
       <li>
-        <a href="mailto:?subject=Foundations%20of%20Coin%20Mixing%20Services&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Registered%20Functional%20Encryption%20for%20Pseudorandom%20Functionalities%20from%20Lattices%3A%20Registered%20ABE%20for%20Unbounded%20Depth%20Circuits%20and%20Turing%20Machines%2C%20and%20More&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -986,7 +970,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F&amp;title=Foundations&#43;of&#43;Coin&#43;Mixing&#43;Services" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F&amp;title=Registered&#43;Functional&#43;Encryption&#43;for&#43;Pseudorandom&#43;Functionalities&#43;from&#43;Lattices%3A&#43;Registered&#43;ABE&#43;for&#43;Unbounded&#43;Depth&#43;Circuits&#43;and&#43;Turing&#43;Machines%2C&#43;and&#43;More" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1003,7 +987,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       
       
       <li>
-        <a href="whatsapp://send?text=Foundations&#43;of&#43;Coin&#43;Mixing&#43;Services%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Registered&#43;Functional&#43;Encryption&#43;for&#43;Pseudorandom&#43;Functionalities&#43;from&#43;Lattices%3A&#43;Registered&#43;ABE&#43;for&#43;Unbounded&#43;Depth&#43;Circuits&#43;and&#43;Turing&#43;Machines%2C&#43;and&#43;More%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1020,7 +1004,7 @@ To amend this situation, we investigate secure constructions of coin mixing serv
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Ffoundations-of-coin-mixing-services%2F&amp;title=Foundations&#43;of&#43;Coin&#43;Mixing&#43;Services" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fregistered-functional-encryption-for-pseudorandom-functionalities-from-lattices%2F&amp;title=Registered&#43;Functional&#43;Encryption&#43;for&#43;Pseudorandom&#43;Functionalities&#43;from&#43;Lattices%3A&#43;Registered&#43;ABE&#43;for&#43;Unbounded&#43;Depth&#43;Circuits&#43;and&#43;Turing&#43;Machines%2C&#43;and&#43;More" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1039,18 +1023,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
 
   
-  
-    
-
-
-
-
-  
-    
-
-
-
-
   
     
 
@@ -1219,12 +1191,6 @@ To amend this situation, we investigate secure constructions of coin mixing serv
 
     </div>
   </div>
-
-
-  
-    
-
-
 
 
   

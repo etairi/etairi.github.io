@@ -5,12 +5,20 @@
     <link>https://erkantairi.com/publication-type/3/</link>
       <atom:link href="https://erkantairi.com/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
       <link>https://erkantairi.com/publication-type/3/</link>
     </image>
+    
+    <item>
+      <title>Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More</title>
+      <link>https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via Interactive Lattice Problems</title>
