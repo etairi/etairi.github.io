@@ -5,12 +5,28 @@
     <link>https://erkantairi.com/publication-type/3/</link>
       <atom:link href="https://erkantairi.com/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
       <link>https://erkantairi.com/publication-type/3/</link>
     </image>
+    
+    <item>
+      <title>Impossibility of VDFs in the ROM: The Complete Picture</title>
+      <link>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Verifiable Delay Functions from Time-Lock Puzzles</title>
+      <link>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hardness of M-LWE with General Distributions and Applications to Leaky Variants</title>

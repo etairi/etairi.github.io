@@ -279,14 +279,12 @@
 
   
 
-<meta name="description" content="The Module Learning With Errors (M-LWE) problem has become a fundamental hardness assumption for lattice-based cryptography. It offers an attractive trade-off between strong robustness guarantees, sometimes directly based on worst-case lattice problems, and efficiency of the subsequent cryptographic primitives. Different flavors of M-LWE have then been introduced towards improving performance. Such variants look at different secret-error distributions and might allow for additional hints on the secret-error vector. Existing hardness results however only cover restricted classes of said distributions, or are tailored to specific leakage models. This lack of generality hinders the design of efficient and versatile cryptographic schemes, as each new distribution or leakage model requires a separate and nontrivial hardness evaluation. &lt;br /&gt;&lt;br /&gt;
-In this work, we address this limitation by establishing the hardness of MLWE under general distributions. As a first step, we show that MLWE remains hard when the error vector follows an arbitrary bounded distribution with sufficient entropy, with some restriction on the number of samples. Building on this, we then reduce to the Hermite Normal Form (HNF) where the secret-error vector follows said arbitrary distribution. Overall, our result shows the actual shape of the distribution does not matter, as long as it keeps sufficient entropy. &lt;br /&gt;&lt;br /&gt;
-To demonstrate the versatility of our framework, we further analyze a range of leakage scenarios. By examining the residual entropy given the leakage, we show that our results of M-LWE with general distributions encompass various types of leakage. More precisely, we cover exact and approximate linear hints which are widely used in recent cryptographic designs, as well as quadratic, and even non-algebraic forms, some of which were not yet covered by any theoretical hardness guarantees. The generality of our results aims at facilitating future cryptographic designs and security analyses." />
+<meta name="description" content="This paper is concerned with the question whether Verifiable Delay Functions (VDFs), as introduced by Boneh et al. [CRYPTO 2018], can be constructed in the plain Random Oracle Model (ROM) without any computational assumptions. A first partial answer to this question is due to Mahmoody, Smith, and Wu [ICALP 2020], and rules out the existence of perfectly unique VDFs in the ROM. Building on this result, Guan, Riazanov, and Yuan [CRYPTO 2025] very recently demonstrated that even VDFs with computational uniqueness are impossible under a public-coin setup. However, the case of computationally unique VDFs with private-coin setup remained open. We close this gap by showing that even computationally expensive private-coin setup will not allow to construct VDFs in the ROM." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/" />
-<link rel="canonical" href="https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/" />
+<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/" />
+<link rel="canonical" href="https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/" />
 
 
 
@@ -325,20 +323,18 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Erkan Tairi" />
-<meta property="og:url" content="https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/" />
-<meta property="og:title" content="Hardness of M-LWE with General Distributions and Applications to Leaky Variants | Erkan Tairi" />
-<meta property="og:description" content="The Module Learning With Errors (M-LWE) problem has become a fundamental hardness assumption for lattice-based cryptography. It offers an attractive trade-off between strong robustness guarantees, sometimes directly based on worst-case lattice problems, and efficiency of the subsequent cryptographic primitives. Different flavors of M-LWE have then been introduced towards improving performance. Such variants look at different secret-error distributions and might allow for additional hints on the secret-error vector. Existing hardness results however only cover restricted classes of said distributions, or are tailored to specific leakage models. This lack of generality hinders the design of efficient and versatile cryptographic schemes, as each new distribution or leakage model requires a separate and nontrivial hardness evaluation. &lt;br /&gt;&lt;br /&gt;
-In this work, we address this limitation by establishing the hardness of MLWE under general distributions. As a first step, we show that MLWE remains hard when the error vector follows an arbitrary bounded distribution with sufficient entropy, with some restriction on the number of samples. Building on this, we then reduce to the Hermite Normal Form (HNF) where the secret-error vector follows said arbitrary distribution. Overall, our result shows the actual shape of the distribution does not matter, as long as it keeps sufficient entropy. &lt;br /&gt;&lt;br /&gt;
-To demonstrate the versatility of our framework, we further analyze a range of leakage scenarios. By examining the residual entropy given the leakage, we show that our results of M-LWE with general distributions encompass various types of leakage. More precisely, we cover exact and approximate linear hints which are widely used in recent cryptographic designs, as well as quadratic, and even non-algebraic forms, some of which were not yet covered by any theoretical hardness guarantees. The generality of our results aims at facilitating future cryptographic designs and security analyses." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/" />
+<meta property="og:title" content="Impossibility of VDFs in the ROM: The Complete Picture | Erkan Tairi" />
+<meta property="og:description" content="This paper is concerned with the question whether Verifiable Delay Functions (VDFs), as introduced by Boneh et al. [CRYPTO 2018], can be constructed in the plain Random Oracle Model (ROM) without any computational assumptions. A first partial answer to this question is due to Mahmoody, Smith, and Wu [ICALP 2020], and rules out the existence of perfectly unique VDFs in the ROM. Building on this result, Guan, Riazanov, and Yuan [CRYPTO 2025] very recently demonstrated that even VDFs with computational uniqueness are impossible under a public-coin setup. However, the case of computationally unique VDFs with private-coin setup remained open. We close this gap by showing that even computationally expensive private-coin setup will not allow to construct VDFs in the ROM." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2025-08-14T00:00:00&#43;00:00"
+      content="2024-10-03T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2025-08-14T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-10-03T00:00:00&#43;00:00">
   
 
 
@@ -362,16 +358,16 @@ To demonstrate the versatility of our framework, we further analyze a range of l
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/"
+    "@id": "https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/"
   },
-  "headline": "Hardness of M-LWE with General Distributions and Applications to Leaky Variants",
+  "headline": "Impossibility of VDFs in the ROM: The Complete Picture",
   
-  "datePublished": "2025-08-14T00:00:00Z",
-  "dateModified": "2025-08-14T00:00:00Z",
+  "datePublished": "2024-10-03T00:00:00Z",
+  "dateModified": "2025-10-03T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Katharina Boudgoust"
+    "name": "Hamza Abusalah"
   },
   
   "publisher": {
@@ -382,7 +378,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       "url": "https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "The Module Learning With Errors (M-LWE) problem has become a fundamental hardness assumption for lattice-based cryptography. It offers an attractive trade-off between strong robustness guarantees, sometimes directly based on worst-case lattice problems, and efficiency of the subsequent cryptographic primitives. Different flavors of M-LWE have then been introduced towards improving performance. Such variants look at different secret-error distributions and might allow for additional hints on the secret-error vector. Existing hardness results however only cover restricted classes of said distributions, or are tailored to specific leakage models. This lack of generality hinders the design of efficient and versatile cryptographic schemes, as each new distribution or leakage model requires a separate and nontrivial hardness evaluation. \u003cbr /\u003e\u003cbr /\u003e\nIn this work, we address this limitation by establishing the hardness of MLWE under general distributions. As a first step, we show that MLWE remains hard when the error vector follows an arbitrary bounded distribution with sufficient entropy, with some restriction on the number of samples. Building on this, we then reduce to the Hermite Normal Form (HNF) where the secret-error vector follows said arbitrary distribution. Overall, our result shows the actual shape of the distribution does not matter, as long as it keeps sufficient entropy. \u003cbr /\u003e\u003cbr /\u003e\nTo demonstrate the versatility of our framework, we further analyze a range of leakage scenarios. By examining the residual entropy given the leakage, we show that our results of M-LWE with general distributions encompass various types of leakage. More precisely, we cover exact and approximate linear hints which are widely used in recent cryptographic designs, as well as quadratic, and even non-algebraic forms, some of which were not yet covered by any theoretical hardness guarantees. The generality of our results aims at facilitating future cryptographic designs and security analyses."
+  "description": "This paper is concerned with the question whether Verifiable Delay Functions (VDFs), as introduced by Boneh et al. [CRYPTO 2018], can be constructed in the plain Random Oracle Model (ROM) without any computational assumptions. A first partial answer to this question is due to Mahmoody, Smith, and Wu [ICALP 2020], and rules out the existence of perfectly unique VDFs in the ROM. Building on this result, Guan, Riazanov, and Yuan [CRYPTO 2025] very recently demonstrated that even VDFs with computational uniqueness are impossible under a public-coin setup. However, the case of computationally unique VDFs with private-coin setup remained open. We close this gap by showing that even computationally expensive private-coin setup will not allow to construct VDFs in the ROM."
 }
 </script>
 
@@ -404,7 +400,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 
 
   
-  <title>Hardness of M-LWE with General Distributions and Applications to Leaky Variants | Erkan Tairi</title>
+  <title>Impossibility of VDFs in the ROM: The Complete Picture | Erkan Tairi</title>
 
   
   
@@ -424,7 +420,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3e5c8373d33be4cb1a6dbc575598ce70" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2847817f66f2ba8d1d4c6eb3c7595a6d" >
 
   
   
@@ -671,7 +667,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
   
   
 <div class="article-container pt-3">
-  <h1>Hardness of M-LWE with General Distributions and Applications to Leaky Variants</h1>
+  <h1>Impossibility of VDFs in the ROM: The Complete Picture</h1>
 
   
 
@@ -689,10 +685,11 @@ To demonstrate the versatility of our framework, we further analyze a range of l
     
 
   <span >
-      Katharina Boudgoust</span>, <span >
-      Corentin Jeudy</span>, <span class="author-highlighted">
+      Hamza Abusalah</span>, <span >
+      Karen Azari</span>, <span >
+      Chethan Kamath</span>, <span class="author-highlighted">
       Erkan Tairi</span>, <span >
-      Weiqiang Wen</span>
+      Maximilian Von Consbruch</span>
   </div>
   
   
@@ -703,7 +700,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
     
       
     
-    August, 2025
+    October, 2025
   </span>
   
 
@@ -744,7 +741,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/cite.bib">
+        data-filename="/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/cite.bib">
   Cite
 </a>
 
@@ -772,7 +769,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2025/1472" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2025/1773" target="_blank" rel="noopener">
     Full Version</a>
 
 
@@ -788,9 +785,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">The Module Learning With Errors (M-LWE) problem has become a fundamental hardness assumption for lattice-based cryptography. It offers an attractive trade-off between strong robustness guarantees, sometimes directly based on worst-case lattice problems, and efficiency of the subsequent cryptographic primitives. Different flavors of M-LWE have then been introduced towards improving performance. Such variants look at different secret-error distributions and might allow for additional hints on the secret-error vector. Existing hardness results however only cover restricted classes of said distributions, or are tailored to specific leakage models. This lack of generality hinders the design of efficient and versatile cryptographic schemes, as each new distribution or leakage model requires a separate and nontrivial hardness evaluation. <br /><br />
-In this work, we address this limitation by establishing the hardness of MLWE under general distributions. As a first step, we show that MLWE remains hard when the error vector follows an arbitrary bounded distribution with sufficient entropy, with some restriction on the number of samples. Building on this, we then reduce to the Hermite Normal Form (HNF) where the secret-error vector follows said arbitrary distribution. Overall, our result shows the actual shape of the distribution does not matter, as long as it keeps sufficient entropy. <br /><br />
-To demonstrate the versatility of our framework, we further analyze a range of leakage scenarios. By examining the residual entropy given the leakage, we show that our results of M-LWE with general distributions encompass various types of leakage. More precisely, we cover exact and approximate linear hints which are widely used in recent cryptographic designs, as well as quadratic, and even non-algebraic forms, some of which were not yet covered by any theoretical hardness guarantees. The generality of our results aims at facilitating future cryptographic designs and security analyses.</p>
+    <p class="pub-abstract">This paper is concerned with the question whether Verifiable Delay Functions (VDFs), as introduced by Boneh et al. [CRYPTO 2018], can be constructed in the plain Random Oracle Model (ROM) without any computational assumptions. A first partial answer to this question is due to Mahmoody, Smith, and Wu [ICALP 2020], and rules out the existence of perfectly unique VDFs in the ROM. Building on this result, Guan, Riazanov, and Yuan [CRYPTO 2025] very recently demonstrated that even VDFs with computational uniqueness are impossible under a public-coin setup. However, the case of computationally unique VDFs with private-coin setup remained open. We close this gap by showing that even computationally expensive private-coin setup will not allow to construct VDFs in the ROM.</p>
     
 
     
@@ -841,7 +836,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F&amp;text=Hardness&#43;of&#43;M-LWE&#43;with&#43;General&#43;Distributions&#43;and&#43;Applications&#43;to&#43;Leaky&#43;Variants" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F&amp;text=Impossibility&#43;of&#43;VDFs&#43;in&#43;the&#43;ROM%3A&#43;The&#43;Complete&#43;Picture" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -858,7 +853,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F&amp;t=Hardness&#43;of&#43;M-LWE&#43;with&#43;General&#43;Distributions&#43;and&#43;Applications&#43;to&#43;Leaky&#43;Variants" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F&amp;t=Impossibility&#43;of&#43;VDFs&#43;in&#43;the&#43;ROM%3A&#43;The&#43;Complete&#43;Picture" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -877,7 +872,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
         
       
       <li>
-        <a href="mailto:?subject=Hardness%20of%20M-LWE%20with%20General%20Distributions%20and%20Applications%20to%20Leaky%20Variants&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Impossibility%20of%20VDFs%20in%20the%20ROM%3A%20The%20Complete%20Picture&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -894,7 +889,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F&amp;title=Hardness&#43;of&#43;M-LWE&#43;with&#43;General&#43;Distributions&#43;and&#43;Applications&#43;to&#43;Leaky&#43;Variants" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F&amp;title=Impossibility&#43;of&#43;VDFs&#43;in&#43;the&#43;ROM%3A&#43;The&#43;Complete&#43;Picture" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -911,7 +906,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       
       
       <li>
-        <a href="whatsapp://send?text=Hardness&#43;of&#43;M-LWE&#43;with&#43;General&#43;Distributions&#43;and&#43;Applications&#43;to&#43;Leaky&#43;Variants%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Impossibility&#43;of&#43;VDFs&#43;in&#43;the&#43;ROM%3A&#43;The&#43;Complete&#43;Picture%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -928,7 +923,7 @@ To demonstrate the versatility of our framework, we further analyze a range of l
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fhardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants%2F&amp;title=Hardness&#43;of&#43;M-LWE&#43;with&#43;General&#43;Distributions&#43;and&#43;Applications&#43;to&#43;Leaky&#43;Variants" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Fimpossibility-of-vdfs-in-the-rom-the-complete-picture%2F&amp;title=Impossibility&#43;of&#43;VDFs&#43;in&#43;the&#43;ROM%3A&#43;The&#43;Complete&#43;Picture" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -947,6 +942,12 @@ To demonstrate the versatility of our framework, we further analyze a range of l
 
 
   
+  
+    
+
+
+
+
   
     
 
