@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</loc>
+    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://erkantairi.com/publication-type/3/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication_types/</loc>
+    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/</loc>
+    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</loc>
@@ -11,14 +23,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication_types/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
