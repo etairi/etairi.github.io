@@ -5,12 +5,36 @@
     <link>https://erkantairi.com/publication-type/1/</link>
       <atom:link href="https://erkantairi.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Feb 2024 15:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://erkantairi.com/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Hardness of M-LWE with General Distributions and Applications to Leaky Variants</title>
+      <link>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Verifiable Delay Functions from Time-Lock Puzzles</title>
+      <link>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impossibility of VDFs in the ROM: The Complete Picture</title>
+      <link>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Lower Bounds for Lattice-based Compact Functional Encryption</title>

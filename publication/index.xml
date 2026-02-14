@@ -5,7 +5,7 @@
     <link>https://erkantairi.com/publication/</link>
       <atom:link href="https://erkantairi.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,34 +13,34 @@
     </image>
     
     <item>
-      <title>(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE</title>
-      <link>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</link>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Impossibility of VDFs in the ROM: The Complete Picture</title>
-      <link>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</guid>
+      <title>Hardness of M-LWE with General Distributions and Applications to Leaky Variants</title>
+      <link>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</guid>
       <description></description>
     </item>
     
     <item>
       <title>On Verifiable Delay Functions from Time-Lock Puzzles</title>
       <link>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hardness of M-LWE with General Distributions and Applications to Leaky Variants</title>
-      <link>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</link>
-      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</guid>
+      <title>Impossibility of VDFs in the ROM: The Complete Picture</title>
+      <link>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE</title>
+      <link>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</link>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</guid>
       <description></description>
     </item>
     

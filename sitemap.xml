@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://erkantairi.com/publication-type/1/</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication_types/</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</loc>
+    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</loc>
     <lastmod>2026-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,36 +34,12 @@
     <lastmod>2026-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://erkantairi.com/publication_types/</loc>
-    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/</loc>
-    <lastmod>2026-01-16T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/on-verifiable-delay-functions-from-time-lock-puzzles/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</loc>
-    <lastmod>2025-08-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication-type/1/</loc>
-    <lastmod>2024-02-05T15:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/</loc>
