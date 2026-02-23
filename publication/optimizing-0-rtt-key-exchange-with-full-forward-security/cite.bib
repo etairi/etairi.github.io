@@ -1,0 +1,17 @@
+@inproceedings{CCSW:GRSSTZ23,
+      author = {G\"{o}th, Christian and Ramacher, Sebastian and Slamanig, Daniel and Striecks, Christoph and Tairi, Erkan and Zikulnig, Alexander},
+      title = {Optimizing 0-RTT Key Exchange with Full Forward Security},
+      year = {2023},
+      isbn = {9798400702594},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3605763.3625246},
+      doi = {10.1145/3605763.3625246},
+      abstract = {Secure communication protocols such as TLS 1.3 or QUIC are doing the heavy lifting in terms of security of today's Internet. These modern protocols provide modes that do not need an interactive handshake, but allow to send cryptographically protected data with the first client message in zero round-trip time (0-RTT). While this helps to reduce communication latency, the security of such protocols in terms of forward security is rather weak.  In recent years, the academic community investigated ways of mitigating this problem and achieving full forward security and replay resilience for such 0-RTT protocols. In particular, this can be achieved via a so-called Puncturable Key Encapsulation Mechanism (PKEM). While the first such schemes were too expensive to be used in practice, Derler et al. (EUROCRYPT 2018) proposed a variant of PKEMs called Bloom Filter Key Encapsulation Mechanism (BFKEM). Unfortunately, these primitives have only be investigated asymptotically and no real benchmarks were conducted. Dallmeier et al. (CANS 2020) were the first to study their practical application within the QUIC protocol. They build upon a specific BFKEM instantiation and conclude that while it comes with significant computational overhead, its practical use is feasible, especially in applications where the increased CPU and memory load can be tolerated.  In this paper, we revisit their choice of the concrete BFKEM instantiation and show that by relying on the concept of Time-based BFKEMs (TB-BFKEMs), also introduced by Derler et al. (EUROCRYPT 2018), one can combine the advantages of having computational efficiency and smaller key sizes. We thereby investigate algorithmic as well as conceptual optimizations with various trade-offs and conclude that our approach seems favorable for many practical settings. Overall, this extends the applicability of 0-RTT protocols with strong security in practice.},
+      booktitle = {Proceedings of the 2023 on Cloud Computing Security Workshop},
+      pages = {55–68},
+      numpages = {14},
+      keywords = {0-rtt key exchange, bloom filter key encapsulation mechanism, quic, tls},
+      location = {Copenhagen, Denmark},
+      series = {CCSW '23}
+}
