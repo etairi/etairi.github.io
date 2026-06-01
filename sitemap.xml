@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://erkantairi.com/publication-type/3/</loc>
+    <loc>https://erkantairi.com/publication-type/1/</loc>
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -18,8 +18,8 @@
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://erkantairi.com/publication-type/1/</loc>
-    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <loc>https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/</loc>
+    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/</loc>
@@ -35,15 +35,19 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication/ciphertext-updatable-attribute-based-and-predicate-encryption-from-lattices/</loc>
     <lastmod>2026-01-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://erkantairi.com/publication-type/3/</loc>
+    <lastmod>2025-05-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://erkantairi.com/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/</loc>
-    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://erkantairi.com/publication/lower-bounds-for-lattice-based-compact-functional-encryption/</loc>

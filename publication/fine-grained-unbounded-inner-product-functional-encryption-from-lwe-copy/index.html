@@ -3,7 +3,7 @@
 <!-- Last Published: May 31, 2026 --><html lang="en-us" >
 
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -70,7 +70,7 @@
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
 
   
   
@@ -214,7 +214,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.f6689966c0a10712f95f034011917db0.css" />
+  <link rel="stylesheet" href="/css/wowchemy.css" />
 
   
   
@@ -279,13 +279,14 @@
 
   
 
-<meta name="description" content="Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and committee is a small set of clients. &lt;br /&gt; &lt;br /&gt;
-We present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (IEEE S&amp;P 2023) and Willow (CRYPTO 2025).  Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients." />
+<meta name="description" content="Inner-product functional encryption (IPFE), introduced by Abdalla-Bourse-De Caro-Pointcheval (PKC&#39;15), is a public-key primitive that allows to decrypt an encrypted vector x with a secret key associated to a vector y such that only their inner-product &lt;x,y&gt; is revealed. The initial definition and constructions all required the length of such vectors to be bounded at setup, and therefore, be fixed in the public parameters.
+In order to overcome this drawback, Dufour-Sans-Pointcheval (ACNS&#39;19) and Tomida-Takashima (AC&#39;18) introduced the notion of unbounded IPFE, where the length of vectors does not need to be fixed during the setup phase, and gave constructions from pairing-based assumptions.
+In this paper, we make progress and provide the first unbounded IPFE constructions that i) are based on the Learning With Errors (LWE) assumption and proven secure in the standard model, ii) achieve adaptive security, iii) provide fine-grained access control, i.e., are identity- and attribute-based, and iv) rely only on black-box access to cryptographic and lattice algorithms. Hence, our constructions are also plausibly post-quantum secure." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://erkantairi.com/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/" />
-<link rel="canonical" href="https://erkantairi.com/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/" />
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/" />
+<link rel="canonical" href="http://localhost:1313/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/" />
 
 
 
@@ -316,7 +317,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 
 <meta property="twitter:card" content="summary" />
-<meta property="twitter:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" />
+<meta property="twitter:image" content="http://localhost:1313/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" />
 
 
 
@@ -324,19 +325,20 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Erkan Tairi" />
-<meta property="og:url" content="https://erkantairi.com/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/" />
-<meta property="og:title" content="Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale | Erkan Tairi" />
-<meta property="og:description" content="Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and committee is a small set of clients. &lt;br /&gt; &lt;br /&gt;
-We present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (IEEE S&amp;P 2023) and Willow (CRYPTO 2025).  Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients." /><meta property="og:image" content="https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="http://localhost:1313/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/" />
+<meta property="og:title" content="(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE | Erkan Tairi" />
+<meta property="og:description" content="Inner-product functional encryption (IPFE), introduced by Abdalla-Bourse-De Caro-Pointcheval (PKC&#39;15), is a public-key primitive that allows to decrypt an encrypted vector x with a secret key associated to a vector y such that only their inner-product &lt;x,y&gt; is revealed. The initial definition and constructions all required the length of such vectors to be bounded at setup, and therefore, be fixed in the public parameters.
+In order to overcome this drawback, Dufour-Sans-Pointcheval (ACNS&#39;19) and Tomida-Takashima (AC&#39;18) introduced the notion of unbounded IPFE, where the length of vectors does not need to be fixed during the setup phase, and gave constructions from pairing-based assumptions.
+In this paper, we make progress and provide the first unbounded IPFE constructions that i) are based on the Learning With Errors (LWE) assumption and proven secure in the standard model, ii) achieve adaptive security, iii) provide fine-grained access control, i.e., are identity- and attribute-based, and iv) rely only on black-box access to cryptographic and lattice algorithms. Hence, our constructions are also plausibly post-quantum secure." /><meta property="og:image" content="http://localhost:1313/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2026-02-22T00:00:00&#43;00:00"
+      content="2026-05-15T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2026-02-22T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2026-01-16T00:00:00&#43;00:00">
   
 
 
@@ -360,16 +362,16 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://erkantairi.com/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/"
+    "@id": "http://localhost:1313/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/"
   },
-  "headline": "Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale",
+  "headline": "(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE",
   
-  "datePublished": "2026-02-22T00:00:00Z",
-  "dateModified": "2026-02-22T00:00:00Z",
+  "datePublished": "2026-05-15T00:00:00Z",
+  "dateModified": "2026-01-16T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Sanjam Garg"
+    "name": "Valerio Cini"
   },
   
   "publisher": {
@@ -377,10 +379,10 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
     "name": "Erkan Tairi",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://erkantairi.com/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
+      "url": "http://localhost:1313/media/icon_hufdd866d90d76849587aac6fbf27da1ac_464_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and committee is a small set of clients. \u003cbr /\u003e \u003cbr /\u003e\nWe present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (IEEE S\u0026P 2023) and Willow (CRYPTO 2025).  Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients."
+  "description": "Inner-product functional encryption (IPFE), introduced by Abdalla-Bourse-De Caro-Pointcheval (PKC'15), is a public-key primitive that allows to decrypt an encrypted vector x with a secret key associated to a vector y such that only their inner-product \u003cx,y\u003e is revealed. The initial definition and constructions all required the length of such vectors to be bounded at setup, and therefore, be fixed in the public parameters.\nIn order to overcome this drawback, Dufour-Sans-Pointcheval (ACNS'19) and Tomida-Takashima (AC'18) introduced the notion of unbounded IPFE, where the length of vectors does not need to be fixed during the setup phase, and gave constructions from pairing-based assumptions.\nIn this paper, we make progress and provide the first unbounded IPFE constructions that i) are based on the Learning With Errors (LWE) assumption and proven secure in the standard model, ii) achieve adaptive security, iii) provide fine-grained access control, i.e., are identity- and attribute-based, and iv) rely only on black-box access to cryptographic and lattice algorithms. Hence, our constructions are also plausibly post-quantum secure."
 }
 </script>
 
@@ -402,7 +404,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 
   
-  <title>Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale | Erkan Tairi</title>
+  <title>(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE | Erkan Tairi</title>
 
   
   
@@ -422,7 +424,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="b008f156b8bc0d0ee7b6e1086d369acf" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="dd432b7a16c3c697b97c7ae3e14c0e19" >
 
   
   
@@ -433,7 +435,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   
   
   
-  <script src="/js/wowchemy-init.min.9e4214442a7711d35691acd58f6f6361.js"></script>
+  <script src="/js/wowchemy-init.min.js"></script>
 
   
 
@@ -669,7 +671,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   
   
 <div class="article-container pt-3">
-  <h1>Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale</h1>
+  <h1>(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE</h1>
 
   
 
@@ -687,11 +689,8 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
     
 
   <span >
-      Sanjam Garg</span>, <span >
-      Alireza Kavousi</span>, <span >
-      Dimitris Kolonelos</span>, <span class="author-highlighted">
-      Erkan Tairi</span>, <span >
-      Zhipeng Wang</span>
+      Valerio Cini</span>, <span class="author-highlighted">
+      Erkan Tairi</span>
   </div>
   
   
@@ -702,7 +701,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
     
       
     
-    February, 2026
+    January, 2026
   </span>
   
 
@@ -743,7 +742,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/cite.bib">
+        data-filename="/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/cite.bib">
   Cite
 </a>
 
@@ -771,7 +770,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2026/346" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://eprint.iacr.org/2026/062" target="_blank" rel="noopener">
     Full Version</a>
 
 
@@ -787,8 +786,9 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and committee is a small set of clients. <br /> <br />
-We present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (IEEE S&amp;P 2023) and Willow (CRYPTO 2025).  Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients.</p>
+    <p class="pub-abstract">Inner-product functional encryption (IPFE), introduced by Abdalla-Bourse-De Caro-Pointcheval (PKC'15), is a public-key primitive that allows to decrypt an encrypted vector x with a secret key associated to a vector y such that only their inner-product &lt;x,y&gt; is revealed. The initial definition and constructions all required the length of such vectors to be bounded at setup, and therefore, be fixed in the public parameters.
+In order to overcome this drawback, Dufour-Sans-Pointcheval (ACNS'19) and Tomida-Takashima (AC'18) introduced the notion of unbounded IPFE, where the length of vectors does not need to be fixed during the setup phase, and gave constructions from pairing-based assumptions.
+In this paper, we make progress and provide the first unbounded IPFE constructions that i) are based on the Learning With Errors (LWE) assumption and proven secure in the standard model, ii) achieve adaptive security, iii) provide fine-grained access control, i.e., are identity- and attribute-based, and iv) rely only on black-box access to cryptographic and lattice algorithms. Hence, our constructions are also plausibly post-quantum secure.</p>
     
 
     
@@ -816,7 +816,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">35th USENIX Security Symposium</div>
+          <div class="col-12 col-md-9">15th International Conference on Security and Cryptography for Networks</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -851,7 +851,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F&amp;text=Lighthouse%3A&#43;Single-Server&#43;Secure&#43;Aggregation&#43;with&#43;O%281%29&#43;Server-Committee&#43;Communication&#43;at&#43;Scale" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F&amp;text=%28Fine-Grained%29&#43;Unbounded&#43;Inner-Product&#43;Functional&#43;Encryption&#43;from&#43;LWE" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -868,7 +868,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F&amp;t=Lighthouse%3A&#43;Single-Server&#43;Secure&#43;Aggregation&#43;with&#43;O%281%29&#43;Server-Committee&#43;Communication&#43;at&#43;Scale" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F&amp;t=%28Fine-Grained%29&#43;Unbounded&#43;Inner-Product&#43;Functional&#43;Encryption&#43;from&#43;LWE" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -887,7 +887,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
         
       
       <li>
-        <a href="mailto:?subject=Lighthouse%3A%20Single-Server%20Secure%20Aggregation%20with%20O%281%29%20Server-Committee%20Communication%20at%20Scale&amp;body=https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=%28Fine-Grained%29%20Unbounded%20Inner-Product%20Functional%20Encryption%20from%20LWE&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -904,7 +904,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F&amp;title=Lighthouse%3A&#43;Single-Server&#43;Secure&#43;Aggregation&#43;with&#43;O%281%29&#43;Server-Committee&#43;Communication&#43;at&#43;Scale" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F&amp;title=%28Fine-Grained%29&#43;Unbounded&#43;Inner-Product&#43;Functional&#43;Encryption&#43;from&#43;LWE" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -921,7 +921,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       
       
       <li>
-        <a href="whatsapp://send?text=Lighthouse%3A&#43;Single-Server&#43;Secure&#43;Aggregation&#43;with&#43;O%281%29&#43;Server-Committee&#43;Communication&#43;at&#43;Scale%20https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=%28Fine-Grained%29&#43;Unbounded&#43;Inner-Product&#43;Functional&#43;Encryption&#43;from&#43;LWE%20http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -938,7 +938,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ferkantairi.com%2Fpublication%2Flighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale%2F&amp;title=Lighthouse%3A&#43;Single-Server&#43;Secure&#43;Aggregation&#43;with&#43;O%281%29&#43;Server-Committee&#43;Communication&#43;at&#43;Scale" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Ffine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy%2F&amp;title=%28Fine-Grained%29&#43;Unbounded&#43;Inner-Product&#43;Functional&#43;Encryption&#43;from&#43;LWE" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -968,18 +968,6 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 
 
-
-  
-    
-
-
-
-
-  
-    
-
-
-
   
   
   
@@ -990,11 +978,11 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   <div class="media author-card content-widget-hr">
     
       
-      <a href="https://erkantairi.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu219a73ab7a504d985ff421a608c7ffc3_50480_270x270_fill_lanczos_center_3.png" alt="Erkan Tairi"></a>
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu219a73ab7a504d985ff421a608c7ffc3_50480_270x270_fill_lanczos_center_3.png" alt="Erkan Tairi"></a>
     
 
     <div class="media-body">
-      <h5 class="card-title"><a href="https://erkantairi.com/">Erkan Tairi</a></h5>
+      <h5 class="card-title"><a href="http://localhost:1313/">Erkan Tairi</a></h5>
       <h6 class="card-subtitle">Postdoctoral Researcher</h6>
       
       <ul class="network-icon" aria-hidden="true">
@@ -1117,12 +1105,6 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 
 
   
-    
-
-
-
-
-  
 
 
 
@@ -1235,7 +1217,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   
 
 
-<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+<script src="/js/vendor-bundle.min.js"></script>
 
 
 
@@ -1316,7 +1298,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 <script id="page-data" type="application/json">{"use_headroom":true}</script>
 
 
-  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
 
 
 
@@ -1330,11 +1312,11 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
   
 
 
-<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+<script src="/en/js/wowchemy.min.js"></script>
 
 
 
-  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+  <script src="/js/wowchemy-map.js" type="module"></script>
 
 
 
@@ -1367,7 +1349,7 @@ We present Lighthouse, a new secure aggregation protocol that supports one-shot 
 </div>
 
 
-  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+  <script src="/js/wowchemy-publication.js" type="module"></script>
 
 
 
