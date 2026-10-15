@@ -1,0 +1,28 @@
+# Old URLs (from the previous Hugo Academic site) and where they should land now.
+# GitHub Pages has no server-side redirects, so each entry is built as a tiny HTML page
+# at the old path that forwards the visitor (and tells search engines the new address).
+
+/publication/: /#publications
+/publication/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/: /#a2l
+/publication/ciphertext-updatable-attribute-based-and-predicate-encryption-from-lattices/: /#cu-abe-pe
+/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe/: /#unbounded-ipfe-lwe
+/publication/fine-grained-unbounded-inner-product-functional-encryption-from-lwe-copy/: /#unbounded-ipfe-lwe
+/publication/foundations-of-coin-mixing-services/: /#coin-mixing
+/publication/hardness-of-m-lwe-with-general-distributions-and-applications-to-leaky-variants/: /#mlwe-general-distributions
+/publication/impossibility-of-vdfs-in-the-rom-the-complete-picture/: /#vdf-rom-impossibility
+/publication/inner-product-functional-encryption-with-updatable-ciphertexts/: /#ipfe-updatable-ciphertexts
+/publication/ledgerlocks-a-security-framework-for-blockchain-protocols-based-on-adaptor-signatures/: /#ledgerlocks
+/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-interactive-lattice-problems/: /#leopard
+/publication/leopard-towards-practical-post-quantum-oblivious-prfs-via-via-2hashdh-paradigm/: /#leopard
+/publication/lighthouse-single-server-secure-aggregation-with-constant-server-committee-communication-at-scale/: /#lighthouse
+/publication/lower-bounds-for-lattice-based-compact-functional-encryption/: /#lower-bounds-compact-fe
+/publication/on-verifiable-delay-functions-from-time-lock-puzzles/: /#vdf-from-tlp
+/publication/optimizing-0-rtt-key-exchange-with-full-forward-security/: /#zero-rtt-forward-security
+/publication/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/: /#pq-adaptor-signature
+/publication/registered-functional-encryption-for-pseudorandom-functionalities-from-lattices/: /#rfe-pseudorandom
+/publication/updatable-signatures-and-message-authentication-codes/: /#updatable-signatures
+/talk/: /#talks
+/event/: /#talks
+/talk/a2l-anonymous-atomic-locks-for-scalability-in-payment-channel-hubs/: /#a2l
+/talk/post-quantum-adaptor-signature-for-privacy-preserving-off-chain-payments/: /#pq-adaptor-signature
+/talk/updatable-signatures-and-message-authentication-codes/: /#updatable-signatures

@@ -1,0 +1,5 @@
+{{- /* All data files (data/*.yaml). Hugo 0.156 replaced site.Data with hugo.Data;
+       pick whichever this Hugo version has, so the site builds on old and new releases. */ -}}
+{{- $data := dict }}
+{{- if ge hugo.Version "0.156.0" }}{{ $data = hugo.Data }}{{ else }}{{ $data = site.Data }}{{ end }}
+{{- return $data }}

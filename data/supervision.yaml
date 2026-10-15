@@ -1,0 +1,23 @@
+# Supervision. The "Supervision" section appears on the homepage as soon as this file
+# has at least one entry. Current students are listed first, then former students.
+# Uncomment the examples below and edit them.
+#
+# Fields (name and level are required):
+#   name
+#   level      e.g. "PhD student", "MSc thesis", "Postdoc", "Research intern"
+#   period     e.g. "2027–" or "2026–2027"
+#   current    true while the person is still in the group
+#   url        optional personal page
+#   note       optional, e.g. "co-supervised with …", thesis title, or "now at …"
+
+# - name: Jane Doe
+#   level: PhD student
+#   period: 2027–
+#   current: true
+#   note: co-supervised with John Smith
+#
+# - name: Alex Example
+#   level: MSc thesis
+#   period: 2026
+#   current: false
+#   note: "Thesis: Lattice-based adaptor signatures. Now at ETH Zürich."

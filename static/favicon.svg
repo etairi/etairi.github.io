@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .cell { fill: #f0ac28; fill-opacity: .38; stroke: #d9930f; stroke-width: 1.6; stroke-linejoin: round; }
+    .dot { fill: #102a4c; }
+    @media (prefers-color-scheme: dark) { .dot { fill: #e3eaf5; } .cell { stroke: #f0b545; fill-opacity: .3; } }
+  </style>
+  <path class="cell" d="M7.6 22.6 20.8 21 24.4 9.4 11.2 11Z"/>
+  <g class="dot">
+    <circle cx="7.6" cy="22.6" r="2.7"/><circle cx="20.8" cy="21" r="2.7"/>
+    <circle cx="24.4" cy="9.4" r="2.7"/><circle cx="11.2" cy="11" r="2.7"/>
+  </g>
+</svg>

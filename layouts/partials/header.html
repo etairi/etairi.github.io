@@ -1,0 +1,16 @@
+<header class="site-header wrap">
+  <a class="brand" href="{{ "/" | relURL }}"{{ if .IsHome }} aria-label="{{ site.Title }}, home"{{ end }}>
+    {{ partial "mark.html" . }}
+    {{- if not .IsHome }}<span class="brand-name">{{ site.Title }}</span>{{ end }}
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      {{- $here := .RelPermalink }}
+      {{- range site.Menus.main }}
+      {{- $url := .URL | relURL }}
+      {{- $current := and (not (hasPrefix .URL "/#")) (ne .URL "/") (hasPrefix .URL "/") (hasPrefix $here $url) }}
+      <li><a href="{{ $url }}"{{ if $current }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>

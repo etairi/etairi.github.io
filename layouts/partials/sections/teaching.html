@@ -1,0 +1,20 @@
+{{- $heading := ne .heading false }}
+{{- $data := .data }}
+{{- $terms := slice }}
+{{- range $data }}{{ if not (in $terms .term) }}{{ $terms = $terms | append .term }}{{ end }}{{ end }}
+<section id="teaching" class="section grid{{ if not $heading }} is-embedded{{ end }}"{{ if $heading }} aria-labelledby="teaching-title"{{ end }}>
+  {{- if $heading }}
+  <h2 class="section-title" id="teaching-title">{{ i18n "teaching" }}</h2>
+  {{- end }}
+  {{- range $terms }}
+  {{- $term := . }}
+  <div class="run">
+    <h3 class="run-label">{{ $term }}</h3>
+    <ul class="entries">
+      {{- range where $data "term" $term }}
+      {{ partial "entries/teaching.html" . }}
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+</section>

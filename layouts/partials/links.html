@@ -1,0 +1,17 @@
+{{- /* Link list shared by publications and talks. Context: dict "item" "id" "page". */ -}}
+{{- $p := .item }}
+{{- $id := .id }}
+<ul class="links">
+  {{- with $p.eprint }}<li><a href="{{ if hasPrefix . "http" }}{{ . }}{{ else }}https://eprint.iacr.org/{{ . }}{{ end }}">{{ i18n "eprint" }}</a></li>{{ end }}
+  {{- with $p.arxiv }}<li><a href="{{ if hasPrefix . "http" }}{{ . }}{{ else }}https://arxiv.org/abs/{{ . }}{{ end }}">{{ i18n "arxiv" }}</a></li>{{ end }}
+  {{- with $p.doi }}<li><a href="https://doi.org/{{ . }}">{{ i18n "doi" }}</a></li>{{ end }}
+  {{- with $p.pdf }}<li><a href="{{ . | relURL }}">{{ i18n "pdf" }}</a></li>{{ end }}
+  {{- with $p.paper }}<li><a href="{{ printf "/#%s" . | relURL }}">{{ i18n "paper" }}</a></li>{{ end }}
+  {{- with $p.code }}<li><a href="{{ . }}">{{ i18n "code" }}</a></li>{{ end }}
+  {{- with $p.slides }}<li><a href="{{ . | relURL }}">{{ i18n "slides" }}</a></li>{{ end }}
+  {{- with $p.video }}<li><a href="{{ . }}">{{ i18n "video" }}</a></li>{{ end }}
+  {{- with $p.poster }}<li><a href="{{ . | relURL }}">{{ i18n "poster" }}</a></li>{{ end }}
+  {{- range $p.links }}<li><a href="{{ .url | relURL }}">{{ .name }}</a></li>{{ end }}
+  {{- with $p.abstract }}<li><button type="button" class="toggle" aria-expanded="false" aria-controls="{{ $id }}-abstract">{{ i18n "abstract" }}</button></li>{{ end }}
+  {{- with $p.bibtex }}<li><button type="button" class="toggle" aria-expanded="false" aria-controls="{{ $id }}-bibtex">{{ i18n "bibtex" }}</button></li>{{ end }}
+</ul>

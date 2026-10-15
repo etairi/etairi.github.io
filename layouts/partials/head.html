@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- with site.Params.csp }}
+<meta http-equiv="Content-Security-Policy" content="{{ . }}">
+{{- end }}
+{{- $title := site.Title }}
+{{- if not .IsHome }}{{ $title = printf "%s | %s" .Title site.Title }}{{ end }}
+{{- $description := site.Params.description }}
+{{- if not .IsHome }}{{ $description = .Description | default (.Summary | plainify | htmlUnescape) | default site.Params.description }}{{ end }}
+{{- $description = $description | plainify | truncate 200 }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1a2e" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="preload" href="{{ "fonts/literata-roman-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/atkinson-next-roman-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- $css := slice (resources.Get "css/main.css") (resources.Get "css/syntax.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- if .Params.math }}
+<link rel="stylesheet" href="{{ "katex/katex.min.css" | relURL }}">
+{{- end }}
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{- end }}
+{{ partial "seo.html" (dict "page" . "title" $title "description" $description) }}

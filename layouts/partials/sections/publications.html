@@ -1,0 +1,17 @@
+{{- /* Context: dict "data" (list of publications) "heading" (optional, false hides the title). */ -}}
+{{- $pubs := .data }}
+{{- $heading := ne .heading false }}
+<section id="publications" class="section grid{{ if not $heading }} is-embedded{{ end }}"{{ if $heading }} aria-labelledby="publications-title"{{ end }}>
+  {{- if $heading }}
+  <h2 class="section-title" id="publications-title">{{ i18n "publications" }}</h2>
+  {{- end }}
+  {{- range site.Params.publicationGroups | default (slice "published" "preprint") }}
+  {{- $group := . }}
+  {{- $items := slice }}
+  {{- range $pubs }}{{ if eq (not .venue) (eq $group "preprint") }}{{ $items = $items | append . }}{{ end }}{{ end }}
+  {{- with $items }}
+  <h3 class="group-title">{{ i18n $group }}</h3>
+  {{ partial "runs.html" (dict "items" . "kind" "publication" "level" 4) }}
+  {{- end }}
+  {{- end }}
+</section>

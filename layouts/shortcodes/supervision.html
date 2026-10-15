@@ -1,0 +1,2 @@
+{{- /* Use {{< supervision >}} in any Markdown page to show data/supervision.yaml there. */ -}}
+{{- with index (partialCached "data.html" .Page) "supervision" }}{{ partial "sections/supervision.html" (dict "data" . "heading" false) }}{{ end -}}

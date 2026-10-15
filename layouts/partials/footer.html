@@ -1,0 +1,29 @@
+{{- $author := site.Params.author }}
+{{- $emails := $author.email }}
+{{- if and $emails (not (reflect.IsSlice $emails)) }}{{ $emails = slice $emails }}{{ end }}
+<footer class="site-footer wrap">
+  {{- if or $author.address $emails }}
+  <div class="footer-contact">
+    {{- with $author.address }}
+    <div>
+      <h2 class="footer-label">{{ i18n "office" }}</h2>
+      <address>{{ range . }}<span>{{ . }}</span>{{ end }}</address>
+    </div>
+    {{- end }}
+    {{- with $emails }}
+    <div>
+      <h2 class="footer-label">{{ i18n "email" }}</h2>
+      {{- range . }}
+      <p><a href="mailto:{{ . }}">{{ . }}</a></p>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+  <div class="footer-fine">
+    <p>© {{ now.Year }} {{ $author.name }}</p>
+    {{- if site.Params.footer.showUpdated }}
+    <p>Last updated {{ now.Format "January 2006" }}</p>
+    {{- end }}
+  </div>
+</footer>

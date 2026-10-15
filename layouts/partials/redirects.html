@@ -1,0 +1,8 @@
+{{- /* GitHub Pages cannot redirect on the server, so every entry in data/redirects.yaml
+       becomes a small HTML page at the old path that forwards to the new address. */ -}}
+{{- range $from, $to := (partialCached "data.html" .).redirects }}
+  {{- $target := $to | absURL }}
+  {{- $html := printf `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="%[1]s"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=%[1]s"></head><body><p>This page has moved to <a href="%[1]s">%[1]s</a>.</p></body></html>` $target }}
+  {{- $path := printf "%s/index.html" (trim $from "/") }}
+  {{- (resources.FromString $path $html).Publish }}
+{{- end }}

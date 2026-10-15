@@ -1,0 +1,45 @@
+# Selected talks.
+#
+# A talk given once:
+#   - title: "Title of the talk"
+#     date: 2026-08-21            YYYY-MM-DD
+#     venue: CRYPTO 2026
+#     venue_url: https://…        optional
+#     location: Online            optional, e.g. "Paris, France"
+#     slides: /slides/name.pdf    put the PDF in static/slides/
+#     video: https://…            optional recording
+#     paper: leopard              optional publication id; adds a "Paper" link
+#
+# A talk given at several venues lists them under `given`, in any order (the most recent
+# is shown first). Each occasion can have its own `video`, `slides` or `links`; slides
+# used everywhere go at the top level. Example:
+#   - title: "Title of the talk"
+#     paper: leopard
+#     slides: /slides/name.pdf
+#     given:
+#       - venue: Cryptography seminar
+#         date: 2026-11-20
+#         location: Paris, France
+#       - venue: CRYPTO 2026
+#         date: 2026-08-21
+#         location: Online
+#         video: https://…
+#
+# Talks are listed by their most recent occasion, newest first.
+
+- title: "LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via 2HashDH Paradigm"
+  paper: leopard
+  slides: /slides/leopard-crypto2026.pdf
+  given:
+    - venue: CRYPTO 2026
+      venue_url: https://crypto.iacr.org/2026/
+      date: 2026-08-21
+      location: Online
+      video: https://www.youtube.com/watch?v=Qq0N0aMT-jM
+
+- title: "(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE"
+  date: 2025-06-19
+  venue: Paris Crypto Day
+  location: Télécom Paris
+  slides: /slides/unbounded-ipfe.pdf
+  paper: unbounded-ipfe-lwe

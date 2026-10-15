@@ -1,0 +1,16 @@
+# Teaching. The "Teaching" section appears on the homepage as soon as this file has
+# at least one entry. Uncomment the example below and edit it. Newest first.
+#
+# Fields (course and term are required):
+#   course       e.g. "CS 276: Cryptography"
+#   term         e.g. "Spring 2027"
+#   role         e.g. "Instructor", "Co-instructor", "Teaching assistant"
+#   institution  optional
+#   url          optional course page
+#   note         optional, e.g. "Graduate course, 40 students"
+
+# - course: "CS 276: Graduate Cryptography"
+#   term: Spring 2027
+#   role: Instructor
+#   institution: UC Berkeley
+#   url: https://example.edu/cs276

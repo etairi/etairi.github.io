@@ -1,0 +1,27 @@
+{{- /* Talks. A talk lists the occasions it was given at under `given`; a talk given once
+       may instead use top-level date/venue/venue_url/location. Each talk appears once,
+       filed under the year of its most recent occasion. */ -}}
+{{- $heading := ne .heading false }}
+{{- $items := slice }}
+{{- range .data }}
+  {{- $t := . }}
+  {{- $given := $t.given }}
+  {{- if not $given }}
+    {{- $given = slice (dict "date" $t.date "venue" $t.venue "venue_url" $t.venue_url "location" $t.location) }}
+  {{- end }}
+  {{- $occasions := slice }}
+  {{- $latest := "" }}
+  {{- range $given }}
+    {{- $key := (time.AsTime .date).Format "2006-01-02" }}
+    {{- if gt $key $latest }}{{ $latest = $key }}{{ end }}
+    {{- $occasions = $occasions | append (merge . (dict "key" $key)) }}
+  {{- end }}
+  {{- $items = $items | append (merge $t (dict "occasions" (sort $occasions "key" "desc") "latest" $latest "year" (time.AsTime $latest).Year)) }}
+{{- end }}
+{{- $items = sort $items "latest" "desc" }}
+<section id="talks" class="section grid{{ if not $heading }} is-embedded{{ end }}"{{ if $heading }} aria-labelledby="talks-title"{{ end }}>
+  {{- if $heading }}
+  <h2 class="section-title" id="talks-title">{{ i18n "talks" }}</h2>
+  {{- end }}
+  {{ partial "runs.html" (dict "items" $items "kind" "talk" "level" 3) }}
+</section>

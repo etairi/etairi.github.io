@@ -1,0 +1,2 @@
+{{- /* Use {{< talks >}} in any Markdown page to show data/talks.yaml there. */ -}}
+{{- with index (partialCached "data.html" .Page) "talks" }}{{ partial "sections/talks.html" (dict "data" . "heading" false) }}{{ end -}}

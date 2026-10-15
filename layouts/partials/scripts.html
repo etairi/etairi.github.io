@@ -1,0 +1,8 @@
+{{- $js := slice (resources.Get "js/main.js") (resources.Get "js/lattice.js") | resources.Concat "js/site.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- if .Params.math }}
+<script src="{{ "katex/katex.min.js" | relURL }}" defer></script>
+<script src="{{ "katex/contrib/auto-render.min.js" | relURL }}" defer></script>
+{{- $math := resources.Get "js/math.js" | minify | fingerprint }}
+<script src="{{ $math.RelPermalink }}" integrity="{{ $math.Data.Integrity }}" defer></script>
+{{- end }}

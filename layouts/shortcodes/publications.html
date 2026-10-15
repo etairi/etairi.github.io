@@ -1,0 +1,2 @@
+{{- /* Use {{< publications >}} in any Markdown page to show data/publications.yaml there. */ -}}
+{{- with index (partialCached "data.html" .Page) "publications" }}{{ partial "sections/publications.html" (dict "data" . "heading" false) }}{{ end -}}

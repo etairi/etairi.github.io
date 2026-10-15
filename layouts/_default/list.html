@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="grid list" aria-labelledby="list-title">
+  <header class="page-head">
+    <h1 class="page-title" id="list-title">{{ .Title }}</h1>
+    {{- with .Content }}
+    <div class="page-lede prose">{{ . }}</div>
+    {{- end }}
+  </header>
+  {{- $pages := .Pages.ByDate.Reverse }}
+  {{- range $pages.GroupByDate "2006" }}
+  <div class="run">
+    <h2 class="run-label">{{ .Key }}</h2>
+    <ol class="entries">
+      {{- range .Pages }}
+      <li class="entry">
+        <p class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <p class="entry-sub"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January" }}</time></p>
+        {{- with .Description | default (.Summary | plainify | htmlUnescape | truncate 220) }}
+        <p class="post-summary">{{ . }}</p>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+  {{- else }}
+  <p class="empty">Nothing here yet.</p>
+  {{- end }}
+</section>
+{{ end }}

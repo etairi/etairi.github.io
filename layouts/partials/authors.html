@@ -1,0 +1,6 @@
+{{- /* A comma-separated author list; the site owner's name is emphasised. */ -}}
+{{- $me := site.Params.author.name -}}
+{{- range $i, $a := . -}}
+  {{- if $i }}, {{ end -}}
+  {{- if eq $a $me }}<span class="me">{{ $a }}</span>{{ else }}{{ $a }}{{ end -}}
+{{- end -}}

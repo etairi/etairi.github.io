@@ -1,0 +1,20 @@
+{{- $p := . }}
+{{- $id := $p.id | default (anchorize $p.title) }}
+<li class="entry" id="{{ $id }}">
+  <p class="entry-title">{{ $p.title }}</p>
+  <p class="entry-sub">{{ partial "authors.html" $p.authors }}</p>
+  <div class="entry-meta">
+    {{- with $p.venue }}<span class="venue">{{ . }}</span>{{ end }}
+    {{- with $p.note }}<span class="note">{{ . }}</span>{{ end }}
+    {{ partial "links.html" (dict "item" $p "id" $id) }}
+  </div>
+  {{- with $p.abstract }}
+  <div class="panel abstract" id="{{ $id }}-abstract"{{ if or (strings.Contains . "$") (strings.Contains . `\(`) }} data-math{{ end }} hidden>{{ . | markdownify }}</div>
+  {{- end }}
+  {{- with $p.bibtex }}
+  <div class="panel bibtex" id="{{ $id }}-bibtex" hidden>
+    <pre><code>{{ trim . "\n " }}</code></pre>
+    <button type="button" class="copy" data-copied="{{ i18n "copied" }}">{{ i18n "copy" }}</button>
+  </div>
+  {{- end }}
+</li>

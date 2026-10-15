@@ -1,0 +1,27 @@
+# Labels used across the site. Change the wording here.
+publications: Publications
+published: Published
+preprint: Preprints
+talks: Selected talks
+teaching: Teaching
+supervision: Supervision
+current: Current
+former: Former
+interests: Research interests
+education: Education
+office: Office
+email: Email
+abstract: Abstract
+bibtex: BibTeX
+copy: Copy
+copied: Copied
+slides: Slides
+video: Video
+paper: Paper
+code: Code
+pdf: PDF
+poster: Poster
+eprint: ePrint
+arxiv: arXiv
+doi: DOI
+readingTime: "{{ .Count }} min read"

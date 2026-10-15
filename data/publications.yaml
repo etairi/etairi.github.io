@@ -1,0 +1,538 @@
+# Publications, newest first. Each entry is listed under "Published" when it has a
+# `venue`, and under "Preprints" when it does not. When a preprint gets accepted,
+# add its venue and it moves on its own.
+#
+# Fields (only title, authors and year are required):
+#   id        short anchor, so erkantairi.com/#<id> links straight to the paper
+#   title, authors, year
+#   venue     short venue name, e.g. "CRYPTO 2026" (leave out for preprints)
+#   note      optional remark shown with the venue, e.g. "Best paper award"
+#   eprint    Cryptology ePrint id, e.g. 2024/1615 (a full URL also works)
+#   arxiv     arXiv id, e.g. 2501.01234
+#   doi       DOI without the https://doi.org/ prefix
+#   pdf, code, slides, video, poster   links (slides can be a local file under static/)
+#   links     any other links: [{name: Project page, url: https://…}]
+#   abstract  Markdown; shown when the reader clicks "Abstract"
+#   bibtex    shown when the reader clicks "BibTeX"
+#
+# Within a year, entries keep the order of this file.
+
+- id: rfe-pseudorandom
+  title: "Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More"
+  authors: [Tapas Pal, Robert Schädlich, Erkan Tairi]
+  year: 2026
+  venue: IACR CiC
+  note: to appear
+  eprint: 2025/967
+  abstract: |
+    Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme.
+
+    Currently, we only know RFE constructions for restricted functionalities using standard assumptions, or for all circuits using powerful tools such as indistinguishability obfuscation, and only in the non-uniform model. In this work, we make progress on this front by providing the first lattice-based constructions of RFE for pseudorandom functionalities, where the model of computation is either non-uniform (unbounded depth circuits) or uniform (Turing machines). Intuitively, we call a functionality pseudorandom if the output of the circuit is indistinguishable from uniform for every input seen by the adversary. Security relies on LWE and a recently introduced primitive called pseudorandom FE (prFE), which currently can be instantiated from evasive LWE.
+
+    We illustrate the versatility of these new functionalities for RFE by leveraging them to achieve key-policy and ciphertext-policy registered attribute-based encryption and registered predicate encryption schemes (KP-RABE, CP-RABE and RPE) for both unbounded depth circuits and Turing machines. Existing RABE constructions support only bounded depth circuits, and prior to our work there neither existed RABE for uniform models of computation nor RPE. As an appealing feature, all our constructions enjoy asymptotic optimality in the sense that their parameters depend neither on the length of public attributes nor the size of policies.
+
+    Along the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines.
+  bibtex: |
+    @misc{EPRINT:PalSchTai25,
+      author = {Tapas Pal and Robert Schädlich and Erkan Tairi},
+      title = {Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered {ABE} for Unbounded Depth Circuits and Turing Machines, and More},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/967},
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/967}
+    }
+
+- id: lighthouse
+  title: "Lighthouse: Single-Server Secure Aggregation with O(1) Server-Committee Communication at Scale"
+  authors: [Sanjam Garg, Alireza Kavousi, Dimitris Kolonelos, Erkan Tairi, Zhipeng Wang]
+  year: 2026
+  venue: USENIX Security 2026
+  eprint: 2026/346
+  links:
+    - name: Proceedings
+      url: https://www.usenix.org/conference/usenixsecurity26/presentation/garg-sanjam
+  abstract: |
+    Secure aggregation is a core primitive for privacy-preserving federated learning, enabling a server to compute aggregates of client updates without learning individual inputs. Recent protocols have explored committee-based designs to reduce client overhead and tolerate weakly connected participants. However, existing approaches still incur communication and computation costs that scale with the number of clients and/or the size of model updates. This becomes a serious bottleneck in interaction between the server and the committee, given that model updates are high-dimensional and committee is a small set of clients.
+
+    We present Lighthouse, a new secure aggregation protocol that supports one-shot client communication and achieves constant committee computation and communication overhead with server, independent of both the number of clients and the size of the input vector. Our protocol attains the best-known round complexity of two rounds, matching OPA (CRYPTO 2025) and TACITA (ePrint 2025) and improving upon Flamingo (IEEE S&P 2023) and Willow (CRYPTO 2025). Our core technical contribution is a novel application of recent advances in batched threshold encryption, which enables succinct server–committee interaction while preserving security and correctness. Beyond asymptotic improvements over prior works, Lighthouse yields substantial concrete efficiency gains: For an aggregation with 1024 clients, we reduce server-to-committee communication by over 100× and committee-to-server communication by over 300× compared to Flamingo and Willow. Also, we present an extension that supports dynamic client participation, a critical requirement for practical deployments at scale, while preserving the asymptotic and concrete efficiency of the static protocol for clients.
+  bibtex: |
+    @inproceedings{USENIX:GKKTW26,
+      author = {Sanjam Garg and Alireza Kavousi and Dimitris Kolonelos and Erkan Tairi and Zhipeng Wang},
+      title = {Lighthouse: {Single-Server} Secure Aggregation with O(1) {Server-Committee} Communication at Scale},
+      booktitle = {35th USENIX Security Symposium (USENIX Security 26)},
+      year = {2026},
+      isbn = {978-1-939133-58-8},
+      address = {Baltimore, MD},
+      pages = {2983--3002},
+      url = {https://www.usenix.org/conference/usenixsecurity26/presentation/garg-sanjam},
+      publisher = {USENIX Association},
+      month = aug
+    }
+
+- id: leopard
+  title: "LeOPaRd: Towards Practical Post-Quantum Oblivious PRFs via 2HashDH Paradigm"
+  authors: [Muhammed F. Esgin, Ron Steinfeld, Erkan Tairi, Jie Xu]
+  year: 2026
+  venue: CRYPTO 2026
+  eprint: 2024/1615
+  doi: 10.1007/978-3-032-35377-1_2
+  slides: /slides/leopard-crypto2026.pdf
+  video: https://www.youtube.com/watch?v=Qq0N0aMT-jM
+  abstract: |
+    In this work, we introduce a more efficient post-quantum oblivious PRF (OPRF) design, called LeOPaRd. Our proposal is round-optimal and supports verifiability and partial obliviousness, all of which are important for practical applications. The main technical novelty of our work is a new method for computing samples of MLWE (Module Learning With Errors) in a two-party setting. To do this, we introduce a new family of (interactive) lattice problems, called MLWE-PRF with re-use (MLWE-PRF-RU). Here, the adversary is given a mix of MLWE and PRF samples where each PRF error is dependent on an adversarially-chosen matrix and the MLWE error. We rigorously study the hardness of MLWE-PRF-RU and provide a reduction from the standard MLWE to MLWE-PRF-RU, establishing a strong security foundation. We believe MLWE-PRF-RU problem family and the intermediate security reductions we introduce along the way can be of independent interest for other interactive protocols.
+
+    LeOPaRd exploits this MLWE-PRF-RU assumption to realize a lattice-based OPRF design without relying on heavy machinery such as noise flooding and fully homomorphic encryption used in earlier works. LeOPaRd can feature around 137 KB total communication, compared to 300+ KB in earlier works, while also achieving about 2x reduction in online communication compared to the prior state-of-the-art result. We also identify gaps in some existing constructions and models, and propose appropriate fixes.
+  bibtex: |
+    @inproceedings{C:ESTX26,
+      author = "Esgin, Muhammed F. and Steinfeld, Ron and Tairi, Erkan and Xu, Jie",
+      editor = "Heninger, Nadia and Rosulek, Mike",
+      title = "{LeOPaRd}: Towards Practical Post-quantum Oblivious {PRFs} via {2HashDH} Paradigm",
+      booktitle = "Advances in Cryptology -- CRYPTO 2026",
+      year = "2026",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "35--67",
+      isbn = "978-3-032-35377-1"
+    }
+
+- id: unbounded-ipfe-lwe
+  title: "(Fine-Grained) Unbounded Inner-Product Functional Encryption from LWE"
+  authors: [Valerio Cini, Erkan Tairi]
+  year: 2026
+  venue: SCN 2026
+  eprint: 2026/062
+  doi: 10.1007/978-3-032-36264-3_11
+  slides: /slides/unbounded-ipfe.pdf
+  abstract: |
+    Inner-product functional encryption (IPFE), introduced by Abdalla-Bourse-De Caro-Pointcheval (PKC'15), is a public-key primitive that allows to decrypt an encrypted vector x with a secret key associated to a vector y such that only their inner-product ⟨x,y⟩ is revealed. The initial definition and constructions all required the length of such vectors to be bounded at setup, and therefore, be fixed in the public parameters.
+
+    In order to overcome this drawback, Dufour-Sans-Pointcheval (ACNS'19) and Tomida-Takashima (AC'18) introduced the notion of unbounded IPFE, where the length of vectors does not need to be fixed during the setup phase, and gave constructions from pairing-based assumptions.
+
+    In this paper, we make progress and provide the first unbounded IPFE constructions that i) are based on the Learning With Errors (LWE) assumption and proven secure in the standard model, ii) achieve adaptive security, iii) provide fine-grained access control, i.e., are identity- and attribute-based, and iv) rely only on black-box access to cryptographic and lattice algorithms. Hence, our constructions are also plausibly post-quantum secure.
+  bibtex: |
+    @inproceedings{SCN:CinTai26,
+      author = "Cini, Valerio and Tairi, Erkan",
+      editor = "Galdi, Clemente and Siniscalchi, Luisa",
+      title = "(Fine-Grained) Unbounded Inner-Product Functional Encryption from {LWE}",
+      booktitle = "Security and Cryptography for Networks",
+      year = "2027",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "206--225",
+      isbn = "978-3-032-36264-3"
+    }
+
+- id: cu-abe-pe
+  title: "Ciphertext-Updatable Attribute-Based and Predicate Encryption from Lattices"
+  authors: [Robert Schädlich, Linda Scheu-Hachtel, Erkan Tairi, Yuejun Wang]
+  year: 2026
+  venue: SCN 2026
+  eprint: 2026/1045
+  doi: 10.1007/978-3-032-36264-3_10
+  abstract: |
+    We present a novel variant of attribute-based encryption (ABE) and predicate encryption (PE) which supports ciphertext updates, called ciphertext-updatable ABE (CU-ABE) and PE (CU-PE). Such a feature enhances the usability of the fine-grained encryption paradigm by allowing controlled updates to the ciphertexts. Updating ciphertexts is carried out via update tokens, which can only be generated by the master secret key holder, yet any party with access to the token can convert the ciphertexts.
+
+    Apart from defining these new primitives and establishing their security in the indistinguishability-based setting, we provide various constructions with different trade-offs. Concretely, we provide a generic transformation from plain ABE to unidirectional and single-hop CU-ABE using only (inner-product) functional encryption (IPFE), which can be instantiated from plain LWE. Then, we show how to combine this CU-ABE with lockable obfuscation to obtain unidirectional and single-hop CU-PE from LWE. These constructions support bounded number of update tokens.
+
+    While unidirectional and single-hop updates with bounded number of tokens are sufficient for practical applications, we show that we can extend our results to multi-hop and unbounded token setting by constructing both key-policy and ciphertext-policy CU-ABE schemes for all bounded-depth circuits. Proving security of these multi-hop constructions turned out to be non-trivial, which required us to develop novel techniques and rely on public-coin evasive LWE assumption.
+  bibtex: |
+    @inproceedings{SCN:SSTW26,
+      author = "Sch{\"a}dlich, Robert and Scheu-Hachtel, Linda and Tairi, Erkan and Wang, Yuejun",
+      editor = "Galdi, Clemente and Siniscalchi, Luisa",
+      title = "Ciphertext-Updatable Attribute-Based and Predicate Encryption from Lattices",
+      booktitle = "Security and Cryptography for Networks",
+      year = "2027",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "185--205",
+      isbn = "978-3-032-36264-3"
+    }
+
+- id: mlwe-general-distributions
+  title: "Hardness of M-LWE with General Distributions and Applications to Leaky Variants"
+  authors: [Katharina Boudgoust, Corentin Jeudy, Erkan Tairi, Weiqiang Wen]
+  year: 2026
+  venue: PKC 2026
+  eprint: 2025/1472
+  doi: 10.1007/978-3-032-26731-3_1
+  abstract: |
+    The Module Learning With Errors (M-LWE) problem has become a fundamental hardness assumption for lattice-based cryptography. It offers an attractive trade-off between strong robustness guarantees, sometimes directly based on worst-case lattice problems, and efficiency of the subsequent cryptographic primitives. Different flavors of M-LWE have then been introduced towards improving performance. Such variants look at different secret-error distributions and might allow for additional hints on the secret-error vector. Existing hardness results however only cover restricted classes of said distributions, or are tailored to specific leakage models. This lack of generality hinders the design of efficient and versatile cryptographic schemes, as each new distribution or leakage model requires a separate and nontrivial hardness evaluation.
+
+    In this work, we address this limitation by establishing the hardness of MLWE under general distributions. As a first step, we show that MLWE remains hard when the error vector follows an arbitrary bounded distribution with sufficient entropy, with some restriction on the number of samples. Building on this, we then reduce to the Hermite Normal Form (HNF) where the secret-error vector follows said arbitrary distribution. Overall, our result shows the actual shape of the distribution does not matter, as long as it keeps sufficient entropy.
+
+    To demonstrate the versatility of our framework, we further analyze a range of leakage scenarios. By examining the residual entropy given the leakage, we show that our results of M-LWE with general distributions encompass various types of leakage. More precisely, we cover exact and approximate linear hints which are widely used in recent cryptographic designs, as well as quadratic, and even non-algebraic forms, some of which were not yet covered by any theoretical hardness guarantees. The generality of our results aims at facilitating future cryptographic designs and security analyses.
+  bibtex: |
+    @inproceedings{PKC:BJTW26,
+      author = "Boudgoust, Katharina and Jeudy, Corentin and Tairi, Erkan and Wen, Weiqiang",
+      editor = "Bai, Shi and Persichetti, Edoardo",
+      title = "Hardness of M-LWE with General Distributions and Applications to Leaky Variants",
+      booktitle = "Public-Key Cryptography -- PKC 2026",
+      year = "2026",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "3--37",
+      isbn = "978-3-032-26731-3"
+    }
+
+- id: vdf-from-tlp
+  title: "On Verifiable Delay Functions from Time-Lock Puzzles"
+  authors: [Hamza Abusalah, Karen Azari, Dario Fiore, Chethan Kamath, Erkan Tairi]
+  year: 2026
+  venue: PKC 2026
+  eprint: 2025/1782
+  doi: 10.1007/978-3-032-26740-5_16
+  abstract: |
+    A verifiable delay function (VDF) [Boneh et al., CRYPTO 2018] is a function that is slow-to-compute, but is quickly verifiable given a short proof. This is formalised using two security requirements: i) sequentiality, which requires that a parallel adversary is unable to compute faster; and ii) soundness, which requires that an adversary is unable to generate a proof that verifies wrong outputs. A time-lock puzzle (TLP), on the other hand, is a puzzle that can be quickly generated, but is slow-to-solve. The security requirement here is sequentiality, which requires that a parallel adversary is unable to solve puzzles faster.
+
+    In this paper, we study the relationship between these two timed primitives. Our main result is a construction of one-time VDF from TLP using indistinguishability obfuscation (iO) and one-way functions (OWFs), where by one-time we mean that sequentiality of the VDF holds only against parallel adversaries that do not preprocess public parameters. Our VDF satisfies several desirable properties. For instance, we achieve perfectly sound and short proofs of O(λ) bits, where λ is the security parameter. Moreover, our construction is a trapdoor (one-time) VDF that can be easily extended to achieve interesting extra properties (defined in our paper) such as trapdoor-homomorphic and trapdoor-constrained evaluation.
+
+    Finally, when combined with the results of Bitansky et al., [ITCS 2016], this yields one-time VDFs from any worst-case non-parallelizing language, iO and OWF. To the best of our knowledge, this is the first such construction that only relies on polynomial security.
+  bibtex: |
+    @inproceedings{PKC:AAFKT26,
+      author = "Abusalah, Hamza and Azari, Karen and Fiore, Dario and Kamath, Chethan and Tairi, Erkan",
+      editor = "Bai, Shi and Persichetti, Edoardo",
+      title = "On Verifiable Delay Functions from Time-Lock Puzzles",
+      booktitle = "Public-Key Cryptography -- PKC 2026",
+      year = "2026",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "494--526",
+      isbn = "978-3-032-26740-5"
+    }
+
+- id: vdf-rom-impossibility
+  title: "Impossibility of VDFs in the ROM: The Complete Picture"
+  authors: [Hamza Abusalah, Karen Azari, Chethan Kamath, Erkan Tairi, Maximilian von Consbruch]
+  year: 2026
+  venue: EUROCRYPT 2026
+  eprint: 2025/1773
+  doi: 10.1007/978-3-032-25330-9_1
+  abstract: |
+    This paper is concerned with the question whether Verifiable Delay Functions (VDFs), as introduced by Boneh et al. [CRYPTO 2018], can be constructed in the plain Random Oracle Model (ROM) without any computational assumptions. A first partial answer to this question is due to Mahmoody, Smith, and Wu [ICALP 2020], and rules out the existence of perfectly unique VDFs in the ROM. Building on this result, Guan, Riazanov, and Yuan [CRYPTO 2025] very recently demonstrated that even VDFs with computational uniqueness are impossible under a public-coin setup. However, the case of computationally unique VDFs with private-coin setup remained open. We close this gap by showing that even computationally expensive private-coin setup will not allow to construct VDFs in the ROM.
+  bibtex: |
+    @inproceedings{EC:AAKTC26,
+      author = "Abusalah, Hamza and Azari, Karen and Kamath, Chethan and Tairi, Erkan and Consbruch, Maximilian von",
+      editor = "Daemen, Joan and Thom{\'e}, Emmanuel",
+      title = "Impossibility of VDFs in the ROM: The Complete Picture",
+      booktitle = "Advances in Cryptology -- EUROCRYPT 2026",
+      year = "2026",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "3--32",
+      isbn = "978-3-032-25330-9"
+    }
+
+- id: lower-bounds-compact-fe
+  title: "Lower Bounds for Lattice-based Compact Functional Encryption"
+  authors: [Erkan Tairi, Akin Ünal]
+  year: 2024
+  venue: EUROCRYPT 2024
+  eprint: 2023/719
+  doi: 10.1007/978-3-031-58723-8_9
+  abstract: |
+    Functional encryption (FE) is a primitive where the holder of a master secret key can control which functions a user can evaluate on encrypted data. It is a powerful primitive that even implies indistinguishability obfuscation (iO), given sufficiently compact ciphertexts (Ananth-Jain, CRYPTO'15 and Bitansky-Vaikuntanathan, FOCS'15). However, despite being extensively studied, there are FE schemes, such as function-hiding inner-product FE (Bishop-Jain-Kowalczyk, AC'15, Abdalla-Catalano-Fiore-Gay-Ursu, CRYPTO’18) and compact quadratic FE (Baltico-Catalano-Fiore-Gay, Lin, CRYPTO’17), that can be only realized using pairings. This raises whether there are some mathematical barriers which hinder us from realizing these FE schemes from other assumptions.
+
+    In this paper, we study the difficulty of constructing lattice-based compact FE. We generalize the impossibility results of Ünal (EC'20) for lattice-based function-hiding FE, and extend it to the case of compact FE. Concretely, we prove lower bounds for lattice-based compact FE schemes which meet some (natural) algebraic restrictions at encryption and decryption, and have messages and ciphertexts of constant dimensions. We see our results as important indications of why it is hard to construct lattice-based FE schemes for new functionalities, and which mathematical barriers have to be overcome.
+  bibtex: |
+    @inproceedings{EC:TaiUna24,
+      author = "Tairi, Erkan and {\"U}nal, Akin",
+      editor = "Joye, Marc and Leander, Gregor",
+      title = "Lower Bounds for Lattice-Based Compact Functional Encryption",
+      booktitle = "Advances in Cryptology -- EUROCRYPT 2024",
+      year = "2024",
+      publisher = "Springer Nature Switzerland",
+      address = "Cham",
+      pages = "249--279",
+      isbn = "978-3-031-58723-8"
+    }
+
+- id: ipfe-updatable-ciphertexts
+  title: "(Inner-Product) Functional Encryption with Updatable Ciphertexts"
+  authors: [Valerio Cini, Sebastian Ramacher, Daniel Slamanig, Christoph Striecks, Erkan Tairi]
+  year: 2023
+  venue: Journal of Cryptology
+  eprint: 2022/1284
+  doi: 10.1007/s00145-023-09486-y
+  abstract: |
+    We propose a novel variant of functional encryption which supports ciphertext updates, dubbed ciphertext updatable functional encryption (CUFE). Such a feature further broadens the practical applicability of the functional encryption paradigm and is carried out via so-called update tokens. However, allowing update tokens requires some care for the security definition as we want that updates can be done by any semi-trusted third party and only on ciphertexts. Our contribution is three-fold:
+
+    a) We define our new primitive with a security notion in the indistinguishability setting. Within CUFE, functional decryption keys and ciphertexts are labeled with tags such that only if the tag of the decryption key and the ciphertext match, then decryption succeeds. Furthermore, we allow ciphertexts to switch their tags to any other tag via update tokens. Such tokens are generated by the holder of the main secret key and can only be used in the desired direction.
+
+    b) We present a generic construction of CUFE for any functionality as well as predicates different from equality testing on tags, which relies on the existence of (probabilistic) indistinguishability obfuscation (iO).
+
+    c) We present a practical construction of CUFE for the inner-product functionality from standard assumptions (i.e., LWE) in the random-oracle model. On the technical level, we build on the recent functional encryption schemes with fine-grained access control and linear operations on encrypted data (Abdalla et al., AC'20) and introduce an additional ciphertext updatability feature. Proving security for such a construction turned out to be non-trivial, particularly when revealing keys for the updated challenge ciphertext is allowed. Overall, such construction enriches the set of known inner-product functional-encryption schemes with the additional updatability feature of ciphertexts.
+  bibtex: |
+    @article{JC:CRSST24,
+      author = {Cini, Valerio and Ramacher, Sebastian and Slamanig, Daniel and Striecks, Christoph and Tairi, Erkan},
+      title = {(Inner-Product) Functional Encryption with Updatable Ciphertexts},
+      journal = {Journal of Cryptology},
+      year = {2023},
+      month = {Dec},
+      day = {15},
+      volume = {37},
+      number = {1},
+      pages = {8},
+      issn = {1432-1378},
+      doi = {10.1007/s00145-023-09486-y},
+      url = {https://doi.org/10.1007/s00145-023-09486-y}
+    }
+
+- id: zero-rtt-forward-security
+  title: "Optimizing 0-RTT Key Exchange with Full Forward Security"
+  authors: [Christian Göth, Sebastian Ramacher, Daniel Slamanig, Christoph Striecks, Erkan Tairi, Alexander Zikulnig]
+  year: 2023
+  venue: ACM CCSW 2023
+  doi: 10.1145/3605763.3625246
+  pdf: https://repositum.tuwien.at/bitstream/20.500.12708/193570/1/Goeth-2023-Optimizing%200-RTT%20Key%20Exchange%20with%20Full%20Forward%20Security-vor.pdf
+  abstract: |
+    Secure communication protocols such as TLS 1.3 or QUIC are doing the heavy lifting in terms of security of today's Internet. These modern protocols provide modes that do not need an interactive handshake, but allow to send cryptographically protected data with the first client message in zero round-trip time (0-RTT). While this helps to reduce communication latency, the security of such protocols in terms of forward security is rather weak.
+
+    In recent years, the academic community investigated ways of mitigating this problem and achieving full forward security and replay resilience for such 0-RTT protocols. In particular, this can be achieved via a so-called Puncturable Key Encapsulation Mechanism (PKEM). While the first such schemes were too expensive to be used in practice, Derler et al. (EUROCRYPT 2018) proposed a variant of PKEMs called Bloom Filter Key Encapsulation Mechanism (BFKEM). Unfortunately, these primitives have only be investigated asymptotically and no real benchmarks were conducted. Dallmeier et al. (CANS 2020) were the first to study their practical application within the QUIC protocol. They build upon a specific BFKEM instantiation and conclude that while it comes with significant computational overhead, its practical use is feasible, especially in applications where the increased CPU and memory load can be tolerated.
+
+    In this paper, we revisit their choice of the concrete BFKEM instantiation and show that by relying on the concept of Time-based BFKEMs (TB-BFKEMs), also introduced by Derler et al. (EUROCRYPT 2018), one can combine the advantages of having computational efficiency and smaller key sizes. We thereby investigate algorithmic as well as conceptual optimizations with various trade-offs and conclude that our approach seems favorable for many practical settings. Overall, this extends the applicability of 0-RTT protocols with strong security in practice.
+  bibtex: |
+    @inproceedings{CCSW:GRSSTZ23,
+      author = {G\"{o}th, Christian and Ramacher, Sebastian and Slamanig, Daniel and Striecks, Christoph and Tairi, Erkan and Zikulnig, Alexander},
+      title = {Optimizing 0-RTT Key Exchange with Full Forward Security},
+      year = {2023},
+      isbn = {9798400702594},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3605763.3625246},
+      doi = {10.1145/3605763.3625246},
+      booktitle = {Proceedings of the 2023 on Cloud Computing Security Workshop},
+      pages = {55--68},
+      numpages = {14},
+      location = {Copenhagen, Denmark},
+      series = {CCSW '23}
+    }
+
+- id: ledgerlocks
+  title: "LedgerLocks: A Security Framework for Blockchain Protocols Based on Adaptor Signatures"
+  authors: [Erkan Tairi, Pedro Moreno-Sanchez, Clara Schneidewind]
+  year: 2023
+  venue: ACM CCS 2023
+  eprint: 2023/1315
+  doi: 10.1145/3576915.3623149
+  abstract: |
+    The scalability and interoperability challenges in current cryptocurrencies have motivated the design of cryptographic protocols that enable efficient applications on top and across widely used cryptocurrencies such as Bitcoin or Ethereum. Examples of such protocols include (virtual) payment channels, atomic swaps, oracle-based contracts, deterministic wallets, and coin mixing services. Many of these protocols are built upon minimal core functionalities supported by a wide range of cryptocurrencies. Most prominently, adaptor signatures (AS) have emerged as a powerful tool for constructing blockchain protocols that are (mostly) agnostic to the specific logic of the underlying cryptocurrency. Even though AS-based protocols are built upon the same cryptographic principles, there exists no modular and faithful way for reasoning about their security. Instead, all the works analyzing such protocols focus on reproving how adaptor signatures are used to cryptographically link transactions while considering highly simplified blockchain models that do not capture security-relevant aspects of transaction execution in blockchain-based consensus.
+
+    To help this, we present LedgerLocks, a framework for the secure design of AS-based blockchain applications in the presence of a realistic blockchain. LedgerLocks defines the concept of AS-locked transactions, transactions whose publication is bound to the knowledge of a cryptographic secret. We argue that AS-locked transactions are the common building block of AS-based blockchain protocols and we define 𝒢<sub>LedgerLocks</sub>, a realistic ledger model in the Universal Composability framework with built-in support for AS-locked transactions. As LedgerLocks abstracts from the cryptographic realization of AS-locked transactions, it allows protocol designers to focus on the blockchain-specific security considerations instead.
+  bibtex: |
+    @inproceedings{CCS:TaiMorSch23,
+      author = {Tairi, Erkan and Moreno-Sanchez, Pedro and Schneidewind, Clara},
+      title = {LedgerLocks: A Security Framework for Blockchain Protocols Based on Adaptor Signatures},
+      year = {2023},
+      isbn = {9798400700507},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3576915.3623149},
+      doi = {10.1145/3576915.3623149},
+      booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+      pages = {859--873},
+      numpages = {15},
+      location = {Copenhagen, Denmark},
+      series = {CCS '23}
+    }
+
+- id: coin-mixing
+  title: "Foundations of Coin Mixing Services"
+  authors: [Noemi Glaeser, Matteo Maffei, Giulio Malavolta, Pedro Moreno-Sanchez, Erkan Tairi, Sri AravindaKrishnan Thyagarajan]
+  year: 2022
+  venue: ACM CCS 2022
+  eprint: 2022/942
+  doi: 10.1145/3548606.3560637
+  abstract: |
+    Coin mixing services allow users to mix their cryptocurrency coins and thus enable unlinkable payments in a way that prevents tracking of honest users' coins by both the service provider and the users themselves. The easy bootstrapping of new users and backwards compatibility with cryptocurrencies (such as Bitcoin) with limited support for scripts are attractive features of this architecture, which has recently gained considerable attention in both academia and industry.
+
+    A recent work of Tairi et al. [IEEE S&P 2021] formalizes the notion of a coin mixing service and proposes A2L, a new cryptographic protocol that simultaneously achieves high efficiency and interoperability. In this work, we identify a gap in their formal model and substantiate the issue by showing two concrete counterexamples: we show how to construct two encryption schemes that satisfy their definitions but lead to a completely insecure system.
+
+    To amend this situation, we investigate secure constructions of coin mixing services. First, we develop the notion of blind conditional signatures (BCS), which acts as the cryptographic core for coin mixing services. We propose game-based security definitions for BCS and propose A2L+, a modified version of the protocol by Tairi et al. that satisfies our security definitions. Our analysis is in an idealized model (akin to the algebraic group model) and assumes the hardness of the one-more discrete logarithm problem. Finally, we propose A2LUC, another construction of BCS that achieves the stronger notion of UC-security (in the standard model), albeit with a significant increase in computation cost. This suggests that constructing a coin mixing service protocol secure under composition requires more complex cryptographic machinery than initially thought.
+  bibtex: |
+    @inproceedings{CCS:GMMMTT22,
+      author = {Glaeser, Noemi and Maffei, Matteo and Malavolta, Giulio and Moreno-Sanchez, Pedro and Tairi, Erkan and Thyagarajan, Sri Aravinda Krishnan},
+      title = {Foundations of Coin Mixing Services},
+      year = {2022},
+      isbn = {9781450394505},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3548606.3560637},
+      doi = {10.1145/3548606.3560637},
+      booktitle = {Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+      pages = {1259--1273},
+      numpages = {15},
+      location = {Los Angeles, CA, USA},
+      series = {CCS '22}
+    }
+
+- id: pq-adaptor-signature
+  title: "Post-Quantum Adaptor Signature for Privacy-Preserving Off-Chain Payments"
+  authors: [Erkan Tairi, Pedro Moreno-Sanchez, Matteo Maffei]
+  year: 2021
+  venue: FC 2021
+  eprint: 2020/1345
+  doi: 10.1007/978-3-662-64331-0_7
+  code: https://github.com/etairi/Adaptor-CSI-FiSh
+  slides: /slides/ias-fc.pdf
+  video: https://www.youtube.com/watch?v=BqMDnWFoGL0
+  abstract: |
+    Adaptor signatures (AS) are an extension of digital signatures that enable the encoding of a cryptographic hard problem (e.g., discrete logarithm) within the signature itself. An AS scheme ensures that (i) the signature can be created only by the user knowing the solution to the cryptographic problem; (ii) the signature reveals the solution itself; (iii) the signature can be verified with the standard verification algorithm. These properties have made AS a salient building block for many blockchain applications, in particular, off-chain payment systems such as payment-channel networks, payment-channel hubs, atomic swaps or discrete log contracts. Current AS constructions, however, are not secure against adversaries with access to a quantum computer.
+
+    In this work, we present IAS, a construction for adaptor signatures that relies on standard cryptographic assumptions for isogenies, and builds upon the isogeny-based signature scheme CSI-FiSh. We formally prove the security of IAS against a quantum adversary. We have implemented IAS and our evaluation shows that IAS can be incorporated into current blockchains while requiring ∼1500 bytes of storage size on-chain and ∼140 milliseconds for digital signature verification. We also show how IAS can be seamlessly leveraged to build post-quantum off-chain payment applications without harming their security and privacy.
+  bibtex: |
+    @inproceedings{FC:TaiMorMaf21,
+      author    = {Erkan Tairi and Pedro Moreno{-}Sanchez and Matteo Maffei},
+      editor    = {Nikita Borisov and Claudia Diaz},
+      title     = {Post-Quantum Adaptor Signature for Privacy-Preserving Off-Chain Payments},
+      booktitle = {Financial Cryptography and Data Security - 25th International Conference,
+                   {FC} 2021, Virtual Event, March 1-5, 2021, Revised Selected Papers,
+                   Part {II}},
+      series    = {Lecture Notes in Computer Science},
+      volume    = {12675},
+      pages     = {131--150},
+      publisher = {Springer},
+      year      = {2021},
+      url       = {https://doi.org/10.1007/978-3-662-64331-0\_7},
+      doi       = {10.1007/978-3-662-64331-0\_7}
+    }
+
+- id: a2l
+  title: "A2L: Anonymous Atomic Locks for Scalability in Payment Channel Hubs"
+  authors: [Erkan Tairi, Pedro Moreno-Sanchez, Matteo Maffei]
+  year: 2021
+  venue: IEEE S&P 2021
+  eprint: 2019/589
+  doi: 10.1109/SP40001.2021.00111
+  code: https://github.com/etairi/A2L
+  slides: /slides/a2l-oakland.pdf
+  video: https://www.youtube.com/watch?v=RPj8efQteyg
+  abstract: |
+    Payment channel hubs (PCHs) constitute a promising solution to the inherent scalability problems of blockchain technologies, allowing for off-chain payments between sender and receiver through an intermediary, called the tumbler. While state-of-the-art PCHs provide security and privacy guarantees against a malicious tumbler, they do so by relying on the scripting-based functionality available only at few cryptocurrencies, and they thus fall short of fundamental properties such as backwards compatibility and efficiency.
+
+    In this work, we present the first PCH protocol to achieve all aforementioned properties. Our PCH builds upon A2L, a novel cryptographic primitive that realizes a three-party protocol for conditional transactions, where the tumbler pays the receiver only if the latter solves a cryptographic challenge with the help of the sender, which implies the sender has paid the tumbler. We prove the security and privacy guarantees of A2L (which carry over to our PCH construction) in the Universal Composability framework and present a provably secure instantiation based on adaptor signatures and randomizable puzzles. We implemented A2L and compared it to TumbleBit, the state-of-the-art Bitcoin-compatible PCH. Asymptotically, A2L has a communication complexity that is constant, as opposed to linear in the security parameter like in TumbleBit. In practice, A2L requires ∼33x less bandwidth than TumbleBit, while retaining the computational cost (or providing 2x speedup with a preprocessing technique). This demonstrates that A2L (and thus our PCH construction) is ready to be deployed today.
+
+    In theory, we demonstrate for the first time that it is possible to design a secure and privacy-preserving PCH while requiring only digital signatures and timelock functionality from the underlying scripting language. In practice, this result makes our PCH backwards compatible with virtually all cryptocurrencies available today, even those offering a highly restricted form of scripting language such as Ripple or Stellar. The practical appealing of our construction has resulted in a proof-of-concept implementation in the COMIT Network, a blockchain technology focused on cross-currency payments.
+  bibtex: |
+    @inproceedings{SP:TaiMorMaf21,
+      author    = {Erkan Tairi and Pedro Moreno{-}Sanchez and Matteo Maffei},
+      title     = {A\({}^{\mbox{2}}\)L: Anonymous Atomic Locks for Scalability in Payment
+                   Channel Hubs},
+      booktitle = {42nd {IEEE} Symposium on Security and Privacy, {SP} 2021, San Francisco,
+                   CA, USA, 24-27 May 2021},
+      pages     = {1834--1851},
+      publisher = {{IEEE}},
+      year      = {2021},
+      url       = {https://doi.org/10.1109/SP40001.2021.00111},
+      doi       = {10.1109/SP40001.2021.00111}
+    }
+
+- id: updatable-signatures
+  title: "Updatable Signatures and Message Authentication Codes"
+  authors: [Valerio Cini, Sebastian Ramacher, Daniel Slamanig, Christoph Striecks, Erkan Tairi]
+  year: 2021
+  venue: PKC 2021
+  eprint: 2021/365
+  doi: 10.1007/978-3-030-75245-3_25
+  slides: /slides/us-pkc.pdf
+  video: https://www.youtube.com/watch?v=RqAlXixDZ1M
+  abstract: |
+    Cryptographic objects with updating capabilities have been proposed by Bellare, Goldreich and Goldwasser (CRYPTO'94) under the umbrella of incremental cryptography. They have recently seen increased interest, motivated by theoretical questions (Ananth et al., EC'17) as well as concrete practical motivations (Lehmann et al., EC'18; Groth et al. CRYPTO'18; Klooss et al., EC'19). In this work, the form of updatability we are particularly interested in is that primitives are key-updatable and allow to update old cryptographic objects, e.g., signatures or message authentication codes, from the old key to the updated key at the same time without requiring full access to the new key (i.e., only via a so-called update token).
+
+    Inspired by the rigorous study of updatable encryption by Lehmann and Tackmann (EC'18) and Boyd et al. (CRYPTO'20), we introduce a definitional framework for updatable signatures (USs) and message authentication codes (UMACs). We discuss several applications demonstrating that such primitives can be useful in practical applications, especially around key rotation in various domains, as well as serve as building blocks in other cryptographic schemes. We then turn to constructions and our focus there is on ones that are secure and practically efficient. In particular, we provide generic constructions from key-homomorphic primitives (signatures and PRFs) as well as direct constructions. This allows us to instantiate these primitives from various assumptions such as DDH or CDH (latter in bilinear groups), or the (R)LWE and the SIS assumptions. As an example, we obtain highly practical US schemes from BLS signatures or UMAC schemes from the Naor-Pinkas-Reingold PRF.
+  bibtex: |
+    @inproceedings{PKC:CRSST21,
+      author    = {Valerio Cini and Sebastian Ramacher and Daniel Slamanig and Christoph Striecks and Erkan Tairi},
+      editor    = {Juan A. Garay},
+      title     = {Updatable Signatures and Message Authentication Codes},
+      booktitle = {Public-Key Cryptography - {PKC} 2021 - 24th {IACR} International Conference
+                   on Practice and Theory of Public Key Cryptography, Virtual Event,
+                   May 10-13, 2021, Proceedings, Part {I}},
+      series    = {Lecture Notes in Computer Science},
+      volume    = {12710},
+      pages     = {691--723},
+      publisher = {Springer},
+      year      = {2021},
+      url       = {https://doi.org/10.1007/978-3-030-75245-3\_25},
+      doi       = {10.1007/978-3-030-75245-3\_25}
+    }
+
+# ---- Preprints (no venue) ---------------------------------------------------
+
+- id: gaussian-kernel-smoothing
+  title: "Gaussian Kernel Lattices and Smoothing Bounds from Theta Integrals"
+  authors: [Samed Düzlü, Nihar Gargava, Erkan Tairi]
+  year: 2026
+  eprint: 2026/2180
+  abstract: |
+    A Gaussian leftover hash lemma (LHL) states that, for a matrix $\mathbf{X}$ with discrete Gaussian columns and a sufficiently wide Gaussian vector $\mathbf{v}$, the product $\mathbf{X}\mathbf{v}$ is close to a discrete Gaussian.  Over the integers this is a classical tool, and Albrecht-Felderhoff-Lai-Lapiha-Woo (EUROCRYPT'26) recently extended it to modules over a number field $K$ of degree $d$. In every version, the lemma rests on two facts about the kernel lattice of $\mathbf{X}$: that $\mathbf{X}$ is surjective, and that the smoothing parameter of the kernel is small.
+
+    We prove both facts with a single analytic estimate. An exact identity expresses the Gaussian mass of the dual kernel, multiplied by the index of the image of $\mathbf{X}$, as an integral of one-dimensional periodic Gaussian sums over a torus. Bounding this integral below two forces the index to be one, which is surjectivity, and bounds the smoothing parameter at the same time. No separate surjectivity argument and no GRH are needed.
+
+    For smoothing error $2^{-\lambda}$ the smoothing parameter is $O_K(\sqrt\lambda)$ with explicit constants, once $\mathbf{X}$ has $m\gtrsim dr\ln(srm)$ columns, and a deterministic lower bound shows that this order is optimal. The width $s$ of the matrix enters only through the number of columns. Over power-of-two cyclotomic fields the theorem even applies to matrices whose integer coefficients follow a discrete Gaussian of width one. In the SIS-to-$k$-SIS reduction of Albrecht et al. (EUROCRYPT'26), the new bound lowers the hint width from $d^{39/2}\lambda^{9/2}$ to $d^{3/2}\lambda^{3/2}$ and the norm loss from $d^{41/2}\lambda^{5}$ to $d^{3/2}\lambda^{2}$, up to logarithmic factors. Additionally, we also formalized the main results of the paper in Lean.
+  bibtex: |
+    @misc{cryptoeprint:2026/2180,
+      author = {Samed Düzlü and Nihar Gargava and Erkan Tairi},
+      title = {Gaussian Kernel Lattices and Smoothing Bounds from Theta Integrals},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/2180},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/2180}
+    }
+
+- id: multi-authority-traitor-tracing
+  title: "Decentralized Multi-Authority (Attribute-Based) Traitor Tracing"
+  authors: [Pratish Datta, Robert Schädlich, Erkan Tairi]
+  year: 2026
+  eprint: 2026/1268
+  abstract: |
+    We initiate the study of multi-authority traitor tracing (MA-TT), a decentralized variant of traitor tracing in which tracing capabilities are distributed across multiple independent authorities rather than concentrated in a single trusted entity. Ciphertexts are associated with tracing policies over a collection of authorities, specifying which subsets of authorities are authorized to jointly accuse a user of contributing to a pirate decoder. This enables fine-grained control over tracing capabilities, prevents unilateral accusations, and reduces the surveillance risks inherent in centralized tracing systems. Our scheme naturally supports conjunction, disjunction, threshold, and more general monotone tracing policies.
+
+    We further introduce multi-authority attribute-based traitor tracing (MA-AB-TT), which combines distributed tracing in MA-TT with decentralized access control from multi-authority attribute-based encryption (MA-ABE). Ciphertexts are therefore equipped with two orthogonal policies: an attribute policy governing decryption and a tracing policy governing which tracing authorities may jointly identify traitors.
+
+    Our main contribution is a construction of MA-AB-TT for arbitrary monotone access structures from the standard matrix decisional Diffie-Hellman (MDDH) assumption in prime-order pairing groups. Our construction achieves adaptive security under static corruption of authorities in the random oracle model. All system parameters are independent of the number of authorities and users in the system, while ciphertexts grow linearly with the size of the associated policies. Our framework also yields a publicly traceable variant, in which tracing can be performed using only the authorities' public keys, albeit with weaker asymptotic efficiency guarantees.
+
+    Technically, we extend the blueprint for pairing-based traitor tracing based on private linear broadcast encryption (PLBE) [Boneh et al., Eurocrypt 2006] to the multi-authority setting. The key technical ingredient is a new multi-authority PLBE construction, which we instantiate from slotted inner-product function encryption (sIPFE) [Lin and Luo, Eurocrypt 2020]. As an intermediate step, we provide a new attribute-based sIPFE scheme supporting arithmetic branching programs, which may be of independent interest.
+
+    Our techniques also yield a new modular construction of adaptively secure MA-ABE under static corruptions from sIPFE, improving on a prior construction by Ambrona and Gay [PKC 2023]. Finally, when specialized to a single authority, our framework gives the first ciphertext-policy attribute-based traitor tracing scheme with asymptotically optimal parameters and exponentially large user spaces.
+  bibtex: |
+    @misc{cryptoeprint:2026/1268,
+      author = {Pratish Datta and Robert Schädlich and Erkan Tairi},
+      title = {Decentralized Multi-Authority (Attribute-Based) Traitor Tracing},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/1268},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/1268}
+    }
+
+- id: adaptor-signatures-bls
+  title: "Adaptor Signatures Meet BLS: Enabling Efficient Blockchain Applications with Unique Adaptor Signatures"
+  authors: [Javier Gomez-Martinez, Erkan Tairi, Pedro Moreno-Sanchez, Clara Schneidewind]
+  year: 2026
+  eprint: 2026/1394
+  abstract: |
+    Blockchain-based cryptocurrencies give rise to a plenitude of advanced applications (such as cross-currency transfers or privacy-preserving payments) through blockchain protocols - cryptographic protocols that orchestrate the processing of financial transactions on the blockchain. To enable a modular design and to enhance reusability across different cryptocurrencies, many blockchain protocols are built upon adaptor signatures (AS), a well-studied cryptographic building block, which is natively supported by most digital signature schemes used for authorizing cryptocurrency transactions. An inherent limitation of AS-based blockchain protocols is the known impossibility to realize AS for unique signature schemes, such as BLS signatures. As a consequence, existing AS-based protocols cannot be executed on cryptocurrencies that base transaction authorization on BLS signatures (such as the Chia Network).
+
+    For such cryptocurrencies, instead, new custom blockchain protocols need to be created, as recently done for the case of coin mixing (S&P'24) or atomic swaps between two cryptocurrencies with BLS-based transaction authorization (ESORICS'24). To avoid such complex and error-prone redesigns, in this work, we develop a novel notion of AS called Two-Party Asymmetric-Input Solitary-Output Adaptor Signature (2P-AISO-AS) that sidesteps the known impossibility result and that can be realized from both randomized (i.e., plain) and unique signature schemes. We provide efficient instantiations of 2P-AISO-AS from BLS and show that we can obtain performant, BLS-compatible blockchain protocols by replacing AS with 2P-AISO-AS in known AS-based protocols, including zero-knowledge contingent payments, atomic swaps, and coin mixing.
+  bibtex: |
+    @misc{cryptoeprint:2026/1394,
+      author = {Javier Gomez-Martinez and Erkan Tairi and Pedro Moreno-Sanchez and Clara Schneidewind},
+      title = {Adaptor Signatures Meet {BLS}: Enabling Efficient Blockchain Applications with Unique Adaptor Signatures},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/1394},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/1394}
+    }
+
+- id: verifiably-encrypted-blind-signatures
+  title: "Foundations of Verifiably Encrypted (Blind) Signatures"
+  authors: [Diego Castejon-Molina, Erkan Tairi, Dimitrios Vasilopoulos, Pedro Moreno-Sanchez]
+  year: 2026
+  eprint: 2026/789
+  abstract: |
+    Many blockchain-based applications can be seen as instances of fair exchange of two signatures. Adaptor signatures (AS) and, more concretely, their extractability property, are commonly combined with blockchain-based economic incentives to achieve fairness in the exchange of two signatures in the blockchain. Certain blockchain applications require unique signatures (e.g., BLS), but it is formally impossible to build AS from unique signatures. Other applications need blind signatures, however, we found a tension between extractability and blindness. To address these limitations, we observe that fair exchange protocols based on AS only require extractability for one of the two exchanged signatures. This observation allows the other AS to be replaced with a primitive that provides similar security guarantees without inheriting the limitations of AS with respect to unique and blind signatures. A natural candidate is verifiably encrypted signatures (VES), introduced by Boneh et al. (Eurocrypt'03). However, this primitive predates blockchain systems and relies on a trusted party, the adjudicator.
+
+    Our first contribution is to eliminate the need for an adjudicator by shifting trust to the blockchain and redefining the VES security model accordingly.  We introduce two new security notions and prove that our notions imply existing guarantees.  We revisit classical VES constructions by Boneh et al. (Eurocrypt'03) for unique signatures and by Hanser et al. (ESORICS'15) for probabilistic signatures, and show that they satisfy our new definitions. Furthermore, we compare our new notions with AS, and conclude that our revised VES is equivalent in terms of security to AS without extractability. Our second contribution extends VES to support blind and non-interactive blind signatures, introducing a new primitive: Verifiably Encrypted Blind Signatures (VEBS). We present a novel construction for non-interactive blind signatures and prove its security. We implement our construction and demonstrate its practical efficiency: encryption requires 3 ms, verification 6 ms, and decryption 13 ms, with a communication cost of 912 bytes. Finally, we discuss how VES/VEBS apply to diverse use cases, including anonymous credentials, contingent payments, atomic swaps, intermediated payments, coin mixing, and applications involving blind signatures.
+  bibtex: |
+    @misc{cryptoeprint:2026/789,
+      author = {Diego Castejon-Molina and Erkan Tairi and Dimitrios Vasilopoulos and Pedro Moreno-Sanchez},
+      title = {Foundations of Verifiably Encrypted (Blind) Signatures},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/789},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/789}
+    }

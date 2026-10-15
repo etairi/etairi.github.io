@@ -1,0 +1,132 @@
+# Site configuration. Most day-to-day edits happen in:
+#   content/_index.md         – the bio on the homepage
+#   data/publications.yaml    – papers (published + preprints)
+#   data/talks.yaml           – selected talks
+#   data/teaching.yaml        – teaching (hidden until it has entries)
+#   data/supervision.yaml     – students (hidden until it has entries)
+#   content/blog/             – blog posts (see README.md to switch the blog on)
+
+baseURL: https://erkantairi.com/
+title: Erkan Tairi
+
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+disableKinds: [taxonomy, term]
+# Keep the capital letters in menu links such as /uploads/CV.pdf. Hugo lowercases them
+# otherwise, and GitHub Pages treats /uploads/cv.pdf as a different, missing file.
+disablePathToLower: true
+
+outputs:
+  home: [html]
+  section: [html, rss]
+  page: [html]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allow inline HTML in Markdown, e.g. <sub>…</sub>
+    extensions:
+      passthrough: # keep LaTeX intact for KaTeX on pages with `math: true`
+        enable: true
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
+  highlight:
+    noClasses: false # code colours come from assets/css/main.css (light and dark)
+
+params:
+  description: Erkan Tairi is a cryptographer and postdoctoral researcher at UC Berkeley.
+
+  author:
+    name: Erkan Tairi
+    role: Postdoctoral Researcher
+    affiliation: UC Berkeley
+    affiliationURL: https://www.berkeley.edu/
+    # Shown in the footer, in this order; the first one is also given to search engines.
+    email:
+      - erkan.tairi@gmail.com
+      - erkan.tairi@berkeley.edu
+    photo: images/photo.webp # in assets/; replace the file to change the portrait
+    # Office address, one line per item; shown in the footer of every page. Delete to hide it.
+    address:
+      - 2208 Gateway
+      - University of California, Berkeley
+      - Berkeley, CA 94720
+
+  # Shown under the bio. Delete a block to hide it.
+  interests:
+    - Foundations of cryptography
+    - Public-key cryptography
+    - Applied cryptography
+  education:
+    - degree: PhD in Computer Science
+      institution: TU Wien
+      year: 2024
+    - degree: MSc in Computer Science
+      institution: Johannes Kepler University
+      year: 2018
+
+  # Icons available: email, googlescholar, dblp, orcid, github, linkedin, keybase,
+  # bluesky, mastodon, x, arxiv, researchgate, semanticscholar, youtube, cv
+  social:
+    - name: Email
+      icon: email
+      url: mailto:erkan.tairi@gmail.com
+    - name: Google Scholar
+      icon: googlescholar
+      url: https://scholar.google.com/citations?user=g9wEb5QAAAAJ&hl=en
+    - name: dblp
+      icon: dblp
+      url: https://dblp.org/pid/242/3151.html
+    - name: ORCID
+      icon: orcid
+      url: https://orcid.org/0000-0002-2283-4829
+    - name: GitHub
+      icon: github
+      url: https://github.com/etairi
+    - name: LinkedIn
+      icon: linkedin
+      url: https://www.linkedin.com/in/erkantairi
+    - name: Keybase
+      icon: keybase
+      url: https://keybase.io/etairi
+    # - name: X
+    #   icon: x
+    #   url: https://x.com/erkantairi
+
+  # Homepage sections, top to bottom. A section is only shown when its data file
+  # (data/<name>.yaml) has entries, so teaching and supervision stay hidden for now.
+  sections:
+    - publications
+    # - talks    # "Selected talks", switched off for now: uncomment to show it again
+    - teaching
+    - supervision
+
+  # Publications are split into these groups, in this order.
+  # An entry without a `venue` counts as a preprint.
+  publicationGroups: [published, preprint]
+
+  # Content-Security-Policy for every page. Extend it if you embed third-party
+  # content (e.g. add https://www.youtube-nocookie.com to frame-src). Set to "" to disable.
+  csp: "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+
+  footer:
+    showUpdated: true # "Last updated <month year>", taken from the build date
+
+menus:
+  main:
+    - name: Publications
+      url: /#publications
+      weight: 10
+    # - name: Talks    # switched off for now, together with `talks` in sections above
+    #   url: /#talks
+    #   weight: 20
+    # - name: Teaching
+    #   url: /#teaching
+    #   weight: 30
+    # - name: Blog
+    #   url: /blog/
+    #   weight: 40
+    - name: CV
+      url: /uploads/CV.pdf
+      weight: 90

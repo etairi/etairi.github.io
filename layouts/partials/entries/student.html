@@ -1,0 +1,5 @@
+{{- $s := . }}
+<li class="entry">
+  <p class="entry-title">{{ with $s.url }}<a href="{{ . }}">{{ $s.name }}</a>{{ else }}{{ $s.name }}{{ end }}</p>
+  <p class="entry-sub">{{ $s.level }}{{ with $s.note }}, {{ . | markdownify }}{{ end }}</p>
+</li>

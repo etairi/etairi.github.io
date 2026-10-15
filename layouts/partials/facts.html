@@ -1,0 +1,21 @@
+{{- $p := site.Params }}
+{{- if or $p.interests $p.education }}
+<dl class="facts">
+  {{- with $p.interests }}
+  <div>
+    <dt>{{ i18n "interests" }}</dt>
+    {{- range . }}
+    <dd>{{ . }}</dd>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- with $p.education }}
+  <div>
+    <dt>{{ i18n "education" }}</dt>
+    {{- range . }}
+    <dd class="dated"><span class="year">{{ .year }}</span><span>{{ .degree }}, {{ .institution }}</span></dd>
+    {{- end }}
+  </div>
+  {{- end }}
+</dl>
+{{- end }}

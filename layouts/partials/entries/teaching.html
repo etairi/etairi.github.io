@@ -1,0 +1,9 @@
+{{- $c := . }}
+<li class="entry">
+  <p class="entry-title">{{ with $c.url }}<a href="{{ . }}">{{ $c.course }}</a>{{ else }}{{ $c.course }}{{ end }}</p>
+  {{- $sub := slice }}
+  {{- with $c.role }}{{ $sub = $sub | append . }}{{ end }}
+  {{- with $c.institution }}{{ $sub = $sub | append . }}{{ end }}
+  {{- with $sub }}<p class="entry-sub">{{ delimit . ", " }}</p>{{ end }}
+  {{- with $c.note }}<p class="entry-sub">{{ . | markdownify }}</p>{{ end }}
+</li>

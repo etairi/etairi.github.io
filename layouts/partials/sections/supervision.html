@@ -1,0 +1,23 @@
+{{- $heading := ne .heading false }}
+{{- $current := slice }}
+{{- $former := slice }}
+{{- range .data }}{{ if .current }}{{ $current = $current | append . }}{{ else }}{{ $former = $former | append . }}{{ end }}{{ end }}
+<section id="supervision" class="section grid{{ if not $heading }} is-embedded{{ end }}"{{ if $heading }} aria-labelledby="supervision-title"{{ end }}>
+  {{- if $heading }}
+  <h2 class="section-title" id="supervision-title">{{ i18n "supervision" }}</h2>
+  {{- end }}
+  {{- range slice (slice "current" $current) (slice "former" $former) }}
+  {{- $label := index . 0 }}
+  {{- with index . 1 }}
+  <h3 class="group-title">{{ i18n $label }}</h3>
+  {{- range . }}
+  <div class="run">
+    <p class="run-label">{{ .period }}</p>
+    <ul class="entries">
+      {{ partial "entries/student.html" . }}
+    </ul>
+  </div>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+</section>

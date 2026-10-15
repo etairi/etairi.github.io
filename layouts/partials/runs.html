@@ -1,0 +1,16 @@
+{{- /* Entries grouped by year, newest first; the year sits in the left column.
+       Context: dict "items" (each with a .year) "kind" (entry partial) "level" (3 or 4). */ -}}
+{{- $ctx := . }}
+{{- $years := slice }}
+{{- range .items }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
+{{- range sort $years "value" "desc" }}
+{{- $year := . }}
+<div class="run">
+  {{ if eq $ctx.level 4 }}<h4 class="run-label">{{ $year }}</h4>{{ else }}<h3 class="run-label">{{ $year }}</h3>{{ end }}
+  <ol class="entries">
+    {{- range where $ctx.items "year" $year }}
+    {{ partial (printf "entries/%s.html" $ctx.kind) . }}
+    {{- end }}
+  </ol>
+</div>
+{{- end }}

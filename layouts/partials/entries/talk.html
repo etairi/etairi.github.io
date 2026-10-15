@@ -1,0 +1,26 @@
+{{- /* One talk: its title, one line per occasion (venue, place and date, and links that
+       belong to that occasion, e.g. its recording), then links for the talk as a whole. */ -}}
+{{- $t := . }}
+{{- $id := $t.id }}
+{{- if not $id }}{{ $id = printf "talk-%s" ($t.paper | default (anchorize $t.title)) }}{{ end }}
+<li class="entry" id="{{ $id }}">
+  <p class="entry-title">{{ $t.title }}</p>
+  <ul class="occasions">
+    {{- range $t.occasions }}
+    {{- $o := . }}
+    {{- $date := time.AsTime $o.date }}
+    <li>
+      <span class="venue">{{ with $o.venue_url }}<a href="{{ . }}">{{ $o.venue }}</a>{{ else }}{{ $o.venue }}{{ end }}</span>
+      <span class="occasion-when">{{ with $o.location }}{{ . }}, {{ end }}<time datetime="{{ $date.Format "2006-01-02" }}">{{ $date.Format "2 January 2006" }}</time></span>
+      {{- if or $o.slides $o.video $o.links }}
+      {{ partial "links.html" (dict "item" (dict "slides" $o.slides "video" $o.video "links" $o.links) "id" $id) }}
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- if or $t.paper $t.slides $t.video $t.links }}
+  <div class="entry-meta">
+    {{ partial "links.html" (dict "item" (dict "paper" $t.paper "slides" $t.slides "video" $t.video "links" $t.links) "id" $id) }}
+  </div>
+  {{- end }}
+</li>

@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{- $author := site.Params.author }}
+<section class="intro grid" aria-labelledby="name">
+  {{- with $author.photo }}{{ with resources.Get . }}
+  {{- $small := .Process "fill 320x427 Top webp q85" }}
+  {{- $large := .Process "fill 480x640 Top webp q85" }}
+  <div class="intro-photo">
+    <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 320w, {{ $large.RelPermalink }} 480w"
+      sizes="(max-width: 44rem) 6.5rem, 9.5rem" width="{{ $small.Width }}" height="{{ $small.Height }}"
+      alt="Portrait of {{ $author.name }}" fetchpriority="high">
+  </div>
+  {{- end }}{{ end }}
+
+  <div class="intro-text">
+    <h1 class="name" id="name">{{ $author.name }}</h1>
+    {{- with $author.role }}
+    <p class="role">{{ . }}{{ with $author.affiliation }} at {{ with $author.affiliationURL }}<a href="{{ . }}">{{ $author.affiliation }}</a>{{ else }}{{ . }}{{ end }}{{ end }}</p>
+    {{- end }}
+    <div class="bio prose">{{ .Content }}</div>
+    {{ partial "social.html" . }}
+    {{ partial "facts.html" . }}
+  </div>
+
+  <div class="intro-figure">{{ partial "lattice.html" . }}</div>
+</section>
+
+{{- /* Sections listed in hugo.yaml; each appears only when data/<name>.yaml has entries. */}}
+{{- $data := partialCached "data.html" . }}
+{{- range $name := site.Params.sections }}
+{{- with index $data $name }}
+{{ partial (printf "sections/%s.html" $name) (dict "data" .) }}
+{{- end }}
+{{- end }}
+
+{{- partial "redirects.html" . }}
+{{ end }}
