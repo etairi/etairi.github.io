@@ -324,6 +324,7 @@ a { color: var(--link); text-underline-offset: 0.18em; }
   color: var(--ink-2);
 }
 .role a { color: inherit; text-decoration-color: var(--link-line); }
+.role + .role { margin-top: 0.15rem; }
 
 .bio {
   margin-top: 1.5rem;

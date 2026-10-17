@@ -13,8 +13,8 @@
 
   <div class="intro-text">
     <h1 class="name" id="name">{{ $author.name }}</h1>
-    {{- with $author.role }}
-    <p class="role">{{ . }}{{ with $author.affiliation }} at {{ with $author.affiliationURL }}<a href="{{ . }}">{{ $author.affiliation }}</a>{{ else }}{{ . }}{{ end }}{{ end }}</p>
+    {{- range $author.roles }}
+    <p class="role">{{ .title }} at {{ with .url }}<a href="{{ . }}">{{ end }}{{ .org }}{{ if .url }}</a>{{ end }}</p>
     {{- end }}
     <div class="bio prose">{{ .Content }}</div>
     {{ partial "social.html" . }}

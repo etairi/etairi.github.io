@@ -39,9 +39,14 @@ params:
 
   author:
     name: Erkan Tairi
-    role: Postdoctoral Researcher
-    affiliation: UC Berkeley
-    affiliationURL: https://www.berkeley.edu/
+    # Positions shown under your name, one per line; the first is also given to search engines.
+    roles:
+      - title: Postdoctoral Researcher
+        org: UC Berkeley
+        url: https://www.berkeley.edu/
+      - title: Research Scientist
+        org: Alloc Init Labs
+        url: https://allocinit.xyz
     # Shown in the footer, in this order; the first one is also given to search engines.
     email:
       - erkan.tairi@gmail.com
