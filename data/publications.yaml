@@ -22,8 +22,8 @@
   authors: [Tapas Pal, Robert Schädlich, Erkan Tairi]
   year: 2026
   venue: IACR CiC
-  note: to appear
   eprint: 2025/967
+  doi: 10.62056/ae893ziuc
   abstract: |
     Registered functional encryption (RFE) is a generalization of public-key encryption that enables computation on encrypted data (like classical FE), but without needing a central trusted authority. Concretely, the users choose their own public keys and register their keys together with a function with an (untrusted) key curator. The key curator aggregates all of the individual public keys into a short master public key, which serves as the public key of the FE scheme.
 
@@ -33,12 +33,17 @@
 
     Along the way, we can also improve on the state-of-the-art for classical attribute-based encryption (ABE) and predicate encryption (PE). Specifically, we obtain new constructions for KP-ABE, CP-ABE and PE for Turing machines with optimal asymptotic parameters. For KP-ABE, this is an in improvement in terms of efficiency, whereas for CP-ABE and PE we are not aware of any prior purely lattice-based construction supporting Turing machines.
   bibtex: |
-    @misc{EPRINT:PalSchTai25,
+    @article{CiC:PalSchTai26,
       author = {Tapas Pal and Robert Schädlich and Erkan Tairi},
       title = {Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered {ABE} for Unbounded Depth Circuits and Turing Machines, and More},
-      howpublished = {Cryptology {ePrint} Archive, Paper 2025/967},
-      year = {2025},
-      url = {https://eprint.iacr.org/2025/967}
+      volume = {3},
+      number = {3},
+      year = {2026},
+      date = {2026-10-26},
+      issn = {3006-5496},
+      doi = {10.62056/ae893ziuc},
+      journal = {{IACR} Communications in Cryptology},
+      publisher = {International Association for Cryptologic Research}
     }
 
 - id: lighthouse
